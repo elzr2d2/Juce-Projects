@@ -1,0 +1,4 @@
+﻿  MainComponent.cpp
+c:\users\yarde\documents\my juce projects\creatinganaudioevent\source\maincomponent.cpp(17): warning C4100: 'sampleRate': unreferenced formal parameter
+c:\users\yarde\documents\my juce projects\creatinganaudioevent\source\maincomponent.cpp(17): warning C4100: 'samplesPerBlockExpected': unreferenced formal parameter
+  CreatingAnAudioEvent_App.vcxproj -> C:\Users\yarde\Documents\My JUCE Projects\CreatingAnAudioEvent\Builds\VisualStudio2017\x64\Debug\App\CreatingAnAudioEvent.exe

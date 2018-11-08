@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="dL1yZT" name="CreatingAnAudioEvent" projectType="guiapp"
-              jucerVersion="5.4.0">
+              jucerVersion="5.3.2">
   <MAINGROUP id="opkFhU" name="CreatingAnAudioEvent">
     <GROUP id="{B84C222E-1360-A6D5-8B39-84332ED90DEC}" name="Source">
       <FILE id="cRlMPw" name="GlobalClockComponent.cpp" compile="1" resource="0"
