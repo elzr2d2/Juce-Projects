@@ -1,6 +1,7 @@
 
 
 #include "MainComponent.h"
+#include "AUv3SynthEditor.h"
 
 
 //==============================================================================
@@ -62,13 +63,10 @@ void MainComponent::paint (Graphics& g)
 
 void MainComponent::resized()
 {
+	
     
 }
 
-AudioProcessor* JUCE_CALLTYPE createPluginFilter()
-{
-	
-	return new AUv3SynthProcessor();
-}
+
 
 

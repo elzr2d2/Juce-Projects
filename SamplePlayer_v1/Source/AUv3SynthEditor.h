@@ -124,6 +124,13 @@ private:
 
     //==============================================================================
     TextButton recordButton { "Record" };
+	/*
+	TextButton playButton{"Play"};
+	TextButton stopButton{"Stop"};
+	
+	*/
+
+
     Slider roomSizeSlider;
     DrawablePath proAudioIcon;
 
