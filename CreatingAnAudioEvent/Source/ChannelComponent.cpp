@@ -22,8 +22,15 @@ class Event
 
 class Track
 {
-	int track_Id=0;
-	std::string track_Name="track "+track_Id;
+	static int track_Id;
+	std::string track_Name = "null";
+
+	Track()
+	{
+		track_Id++;
+		track_Name = "track " + track_Id;
+	}
+
 
 	std::vector<Event> Events;
 };

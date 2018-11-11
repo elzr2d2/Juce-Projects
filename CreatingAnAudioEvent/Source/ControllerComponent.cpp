@@ -1,8 +1,10 @@
 #include "ControllerComponent.h"
 
+
+
 ControllerComponent::ControllerComponent()
 {
-	setSize(230, 60);
+	setSize(600, 800);
 
 	playButton.setButtonText("PLAY");
 	playButton.addListener(this);
@@ -13,11 +15,17 @@ ControllerComponent::ControllerComponent()
 	stopButton.setButtonText("STOP");
 	stopButton.addListener(this);
 
+	clockLabel.setText(gb_String, NotificationType::dontSendNotification);
+	clockLabel.setColour(Label::ColourIds::textColourId,Colours::aliceblue);
+	
+
 	addAndMakeVisible(playButton);
 	addAndMakeVisible(pauseButton);
 	addAndMakeVisible(stopButton);
+	addAndMakeVisible(clockLabel);
 
 }
+
 ControllerComponent::~ControllerComponent()
 {
 
@@ -40,7 +48,11 @@ void ControllerComponent::paint(Graphics& g)
 	area.setSize(getParentWidth(), getParentHeight());
 	
 	g.setColour(Colours::darkgrey);
+
 	g.fillAll();
+
+	g.setColour(Colours::blue);
+	g.drawText(clockLabel.getText(), getWidth() / 2, getHeight() / 2, 500,500, Justification::centred);
 }
 void ControllerComponent::resized()
 {
@@ -53,6 +65,8 @@ void ControllerComponent::resized()
 	playButton.setBounds(x, y, width, height);
 	pauseButton.setBounds(width+space, y, width, height);
 	stopButton.setBounds(width*2 + space, y, width, height);
+
+	clockLabel.setBounds(getWidth()/2, getHeight()/2, width, height);
 	
 	repaint();
 }
