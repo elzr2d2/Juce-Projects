@@ -2,7 +2,7 @@
 
 class Event
 {
-
+public:
 	static int event_Id;
 
 

@@ -14,12 +14,11 @@ public:
 	void paint(Graphics& g) override;
 	void resized() override;
 	void buttonClicked(Button* button) override;
+
 	std::string castGlobalClockToString(GlobalClock gb)
 	{
 		double gb_Double = gb.Get();
-		std::string gb_String = nullptr;
-
-		std::to_string(gb_Double);
+		std::string gb_String = std::to_string(gb_Double);
 
 		return gb_String;
 	}
