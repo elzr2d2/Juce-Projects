@@ -1,7 +1,7 @@
 #include "MainComponent.h"
 
 
-MainComponent::MainComponent()
+MainComponent::MainComponent(): controller(processor)
 {
     setSize (1000, 600);
     setAudioChannels (0, 2);
@@ -16,18 +16,17 @@ MainComponent::~MainComponent()
 
 void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRate)
 {
-
+    processor.prepareToPlay(samplesPerBlockExpected, sampleRate);
 }
 
 void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFill)
 {
-
-    bufferToFill.clearActiveBufferRegion();
+    processor.getNextAudioBlock(bufferToFill);
 }
 
 void MainComponent::releaseResources()
 {
-
+    processor.releaseResources();
 }
 
 

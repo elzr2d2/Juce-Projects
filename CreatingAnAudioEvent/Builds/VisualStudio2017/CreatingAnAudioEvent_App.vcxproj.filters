@@ -2,6 +2,12 @@
 
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="CreatingAnAudioEvent\Source\UI">
+      <UniqueIdentifier>{4920F766-B760-35DE-5CE7-39F8F9E5B6A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CreatingAnAudioEvent\Source\Audio">
+      <UniqueIdentifier>{D83B8BAB-A97C-20E9-2C03-9187C2D480F1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="CreatingAnAudioEvent\Source">
       <UniqueIdentifier>{FBAD5F3F-7EE8-8164-20B0-2895EB830E39}</UniqueIdentifier>
     </Filter>
@@ -421,14 +427,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\GlobalClockComponent.cpp">
-      <Filter>CreatingAnAudioEvent\Source</Filter>
+    <ClCompile Include="..\..\Source\UI\ChannelComponent.cpp">
+      <Filter>CreatingAnAudioEvent\Source\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ControllerComponent.cpp">
-      <Filter>CreatingAnAudioEvent\Source</Filter>
+    <ClCompile Include="..\..\Source\UI\ControllerComponent.cpp">
+      <Filter>CreatingAnAudioEvent\Source\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ChannelComponent.cpp">
-      <Filter>CreatingAnAudioEvent\Source</Filter>
+    <ClCompile Include="..\..\Source\UI\GlobalClockComponent.cpp">
+      <Filter>CreatingAnAudioEvent\Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Audio\AudioProcessor.cpp">
+      <Filter>CreatingAnAudioEvent\Source\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Audio\TimeCounter.cpp">
+      <Filter>CreatingAnAudioEvent\Source\Audio</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\MainComponent.cpp">
       <Filter>CreatingAnAudioEvent\Source</Filter>
@@ -2337,14 +2349,20 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\GlobalClockComponent.h">
-      <Filter>CreatingAnAudioEvent\Source</Filter>
+    <ClInclude Include="..\..\Source\UI\ChannelComponent.h">
+      <Filter>CreatingAnAudioEvent\Source\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\ControllerComponent.h">
-      <Filter>CreatingAnAudioEvent\Source</Filter>
+    <ClInclude Include="..\..\Source\UI\ControllerComponent.h">
+      <Filter>CreatingAnAudioEvent\Source\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\ChannelComponent.h">
-      <Filter>CreatingAnAudioEvent\Source</Filter>
+    <ClInclude Include="..\..\Source\UI\GlobalClockComponent.h">
+      <Filter>CreatingAnAudioEvent\Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Audio\AudioProcessor.h">
+      <Filter>CreatingAnAudioEvent\Source\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Audio\TimeCounter.h">
+      <Filter>CreatingAnAudioEvent\Source\Audio</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\MainComponent.h">
       <Filter>CreatingAnAudioEvent\Source</Filter>

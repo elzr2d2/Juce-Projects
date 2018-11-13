@@ -4,18 +4,28 @@
               jucerVersion="5.4.1">
   <MAINGROUP id="opkFhU" name="CreatingAnAudioEvent">
     <GROUP id="{B84C222E-1360-A6D5-8B39-84332ED90DEC}" name="Source">
-      <FILE id="cRlMPw" name="GlobalClockComponent.cpp" compile="1" resource="0"
-            file="Source/GlobalClockComponent.cpp"/>
-      <FILE id="zIJuap" name="GlobalClockComponent.h" compile="0" resource="0"
-            file="Source/GlobalClockComponent.h"/>
-      <FILE id="uFOyF8" name="ControllerComponent.cpp" compile="1" resource="0"
-            file="Source/ControllerComponent.cpp"/>
-      <FILE id="pJ5RHP" name="ControllerComponent.h" compile="0" resource="0"
-            file="Source/ControllerComponent.h"/>
-      <FILE id="MLwbCh" name="ChannelComponent.cpp" compile="1" resource="0"
-            file="Source/ChannelComponent.cpp"/>
-      <FILE id="tDPgx4" name="ChannelComponent.h" compile="0" resource="0"
-            file="Source/ChannelComponent.h"/>
+      <GROUP id="{5499F842-F27C-B232-5086-7D69D3227320}" name="UI">
+        <FILE id="yvgjkg" name="ChannelComponent.cpp" compile="1" resource="0"
+              file="Source/UI/ChannelComponent.cpp"/>
+        <FILE id="Rxnb8i" name="ChannelComponent.h" compile="0" resource="0"
+              file="Source/UI/ChannelComponent.h"/>
+        <FILE id="tnkgsY" name="ControllerComponent.cpp" compile="1" resource="0"
+              file="Source/UI/ControllerComponent.cpp"/>
+        <FILE id="c1uXNZ" name="ControllerComponent.h" compile="0" resource="0"
+              file="Source/UI/ControllerComponent.h"/>
+        <FILE id="EQdvI3" name="GlobalClockComponent.cpp" compile="1" resource="0"
+              file="Source/UI/GlobalClockComponent.cpp"/>
+        <FILE id="Jljgvb" name="GlobalClockComponent.h" compile="0" resource="0"
+              file="Source/UI/GlobalClockComponent.h"/>
+      </GROUP>
+      <GROUP id="{119BC0DD-81E1-0C86-F078-CF71AE744734}" name="Audio">
+        <FILE id="HIX9gG" name="AudioProcessor.cpp" compile="1" resource="0"
+              file="Source/Audio/AudioProcessor.cpp"/>
+        <FILE id="G6iPWQ" name="AudioProcessor.h" compile="0" resource="0"
+              file="Source/Audio/AudioProcessor.h"/>
+        <FILE id="lvH3zB" name="TimeCounter.cpp" compile="1" resource="0" file="Source/Audio/TimeCounter.cpp"/>
+        <FILE id="DJRlBW" name="TimeCounter.h" compile="0" resource="0" file="Source/Audio/TimeCounter.h"/>
+      </GROUP>
       <FILE id="Oo28Vq" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
       <FILE id="Kekt4t" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>

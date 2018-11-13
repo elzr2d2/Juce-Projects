@@ -16,12 +16,16 @@ if (APPLE)
 project ("CreatingAnAudioEvent" C CXX)
 
 add_executable (APP
-    "../../Source/GlobalClockComponent.cpp"
-    "../../Source/GlobalClockComponent.h"
-    "../../Source/ControllerComponent.cpp"
-    "../../Source/ControllerComponent.h"
-    "../../Source/ChannelComponent.cpp"
-    "../../Source/ChannelComponent.h"
+    "../../Source/UI/ChannelComponent.cpp"
+    "../../Source/UI/ChannelComponent.h"
+    "../../Source/UI/ControllerComponent.cpp"
+    "../../Source/UI/ControllerComponent.h"
+    "../../Source/UI/GlobalClockComponent.cpp"
+    "../../Source/UI/GlobalClockComponent.h"
+    "../../Source/Audio/AudioProcessor.cpp"
+    "../../Source/Audio/AudioProcessor.h"
+    "../../Source/Audio/TimeCounter.cpp"
+    "../../Source/Audio/TimeCounter.h"
     "../../Source/MainComponent.h"
     "../../Source/MainComponent.cpp"
     "../../Source/Main.cpp"
@@ -1358,9 +1362,11 @@ add_executable (APP
     "../../JuceLibraryCode/JuceHeader.h"
 )
 
-set_source_files_properties ("../../Source/GlobalClockComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../Source/ControllerComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../Source/ChannelComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/UI/ChannelComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/UI/ControllerComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/UI/GlobalClockComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/Audio/AudioProcessor.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/Audio/TimeCounter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/MainComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../JUCE/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
