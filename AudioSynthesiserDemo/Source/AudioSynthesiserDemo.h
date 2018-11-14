@@ -114,7 +114,7 @@ struct SynthAudioSource  : public AudioSource
 };
 
 //==============================================================================
-class AudioSynthesiserDemo  : public Component
+class AudioSynthesiserDemo : public Component, public Button::Listener
 {
 public:
     AudioSynthesiserDemo()
@@ -135,6 +135,11 @@ public:
         audioDeviceManager.addAudioCallback (&liveAudioDisplayComp);
         audioSourcePlayer.setSource (&synthAudioSource);
 
+		addAndMakeVisible(recordMidi);
+		recordMidi.addListener(this);
+
+		addAndMakeVisible(playMidi);
+		playMidi.addListener(this);
 		
 
        #ifndef JUCE_DEMO_RUNNER
@@ -160,7 +165,23 @@ public:
         audioDeviceManager.removeAudioCallback (&audioSourcePlayer);
         audioDeviceManager.removeAudioCallback (&liveAudioDisplayComp);
 	
-    }
+		recordMidi.removeListener(this);
+		playMidi.removeListener(this);
+
+	}
+
+
+	void buttonClicked(Button* button) override
+	{
+		if (button == &recordMidi)
+		{
+
+		}
+		if (button == &playMidi)
+		{
+
+		}
+	}
 
     //==============================================================================
     void paint (Graphics& g) override
@@ -196,6 +217,9 @@ private:
     //ToggleButton sineButton     { "Use sine wave" };
     ToggleButton  bellButton{ "Bell" };
 	ToggleButton guitarButton{ "Guitar" };
+
+	TextButton recordMidi{ "Record" };
+	TextButton playMidi{ "Play" };
 
     LiveScrollingAudioDisplay liveAudioDisplayComp;
 

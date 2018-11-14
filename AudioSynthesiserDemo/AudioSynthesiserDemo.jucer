@@ -3,7 +3,7 @@
 <JUCERPROJECT name="AudioSynthesiserDemo" companyName="JUCE" version="1.0.0"
               userNotes="Simple synthesiser application." companyWebsite="http://juce.com"
               defines="PIP_JUCE_EXAMPLES_DIRECTORY=QzpcQ09ERVxKVUNFXGV4YW1wbGVz"
-              projectType="guiapp" id="Fk1FwI" jucerVersion="5.3.2">
+              projectType="guiapp" id="Fk1FwI" jucerVersion="5.4.1">
   <MAINGROUP id="fxEq1Q" name="AudioSynthesiserDemo">
     <GROUP id="{BC8A6609-B1AD-65A8-55BF-251193AB35BA}" name="Source">
       <FILE id="mmaHxg" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
