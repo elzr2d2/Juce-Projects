@@ -4,6 +4,13 @@
               jucerVersion="5.4.1">
   <MAINGROUP id="opkFhU" name="CreatingAnAudioEvent">
     <GROUP id="{B84C222E-1360-A6D5-8B39-84332ED90DEC}" name="Source">
+      <GROUP id="{B2904BBF-3B64-CAFD-FD3F-D6004E66BD65}" name="Assets">
+        <FILE id="o3JVvu" name="AudioLiveScrollingDisplay.h" compile="0" resource="0"
+              file="Source/AudioLiveScrollingDisplay.h"/>
+        <FILE id="AnOpUh" name="DemoUtilities.h" compile="0" resource="0" file="Source/DemoUtilities.h"/>
+      </GROUP>
+      <FILE id="dsnsd5" name="AudioSynthesiserDemo.h" compile="0" resource="0"
+            file="Source/AudioSynthesiserDemo.h"/>
       <GROUP id="{5499F842-F27C-B232-5086-7D69D3227320}" name="UI">
         <FILE id="yvgjkg" name="ChannelComponent.cpp" compile="1" resource="0"
               file="Source/UI/ChannelComponent.cpp"/>

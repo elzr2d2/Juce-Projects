@@ -1,4 +1,6 @@
 #include "ControllerComponent.h"
+#include "../AudioSynthesiserDemo.h"
+
 
 ControllerComponent::ControllerComponent(MainAudioProcessor& inProcessor): processor(inProcessor)
 {
@@ -13,12 +15,16 @@ ControllerComponent::ControllerComponent(MainAudioProcessor& inProcessor): proce
     stopButton.setButtonText("STOP");
     stopButton.addListener(this);
 
+	playRiffButton.setButtonText("Play Riff");
+	playRiffButton.addListener(this);
+
     clockLabel.setText(gb_String, NotificationType::dontSendNotification);
     clockLabel.setColour(Label::ColourIds::textColourId, Colours::aliceblue);
 
     addAndMakeVisible(playButton);
     addAndMakeVisible(pauseButton);
     addAndMakeVisible(stopButton);
+	addAndMakeVisible(playRiffButton);
     addAndMakeVisible(clockLabel);
 
     startTimerHz(60);
@@ -53,15 +59,23 @@ void ControllerComponent::resized()
     playButton.setBounds(x, y, width, height);
     pauseButton.setBounds(width + space, y, width, height);
     stopButton.setBounds(width * 2 + space, y, width, height);
+	playRiffButton.setBounds(width * 4 + space, y, width, height);
 
     clockLabel.setBounds(50, 50, width, height);
 
     repaint();
 }
 
+
+
 void ControllerComponent::buttonClicked(Button* button)
 {
-
+	
+	if (button == &playRiffButton)
+	{
+		ASD.playRiff();
+	}
+	
 }
 
 std::string ControllerComponent::castGlobalClockToString(GlobalClock gb)

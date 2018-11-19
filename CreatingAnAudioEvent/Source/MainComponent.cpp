@@ -1,12 +1,14 @@
 #include "MainComponent.h"
 
 
+
 MainComponent::MainComponent(): controller(processor)
 {
-    setSize (1000, 600);
+    setSize (1920, 1080);
     setAudioChannels (0, 2);
 	addAndMakeVisible(channel);
-	addAndMakeVisible(controller); 
+	addAndMakeVisible(controller);
+	addAndMakeVisible(audioSynth);
 }
 
 MainComponent::~MainComponent()
@@ -17,6 +19,9 @@ MainComponent::~MainComponent()
 void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRate)
 {
     processor.prepareToPlay(samplesPerBlockExpected, sampleRate);
+
+	
+	
 }
 
 void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFill)
@@ -38,4 +43,6 @@ void MainComponent::paint (Graphics& g)
 void MainComponent::resized()
 {
 	controller.setBounds(200,200, controller.getWidth(), controller.getHeight());
+
+	controller.setBounds(600, 600, 600, 600);
 }

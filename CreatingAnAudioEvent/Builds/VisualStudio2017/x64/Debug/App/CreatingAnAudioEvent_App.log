@@ -1,56 +1,11 @@
-﻿  ControllerComponent.cpp
-  ChannelComponent.cpp
-h:\visual studio\creatinganaudioevent\source\controllercomponent.h(17): warning C4458: declaration of 'gb' hides class member (compiling source file ..\..\Source\ControllerComponent.cpp)
-  h:\visual studio\creatinganaudioevent\source\controllercomponent.h(35): note: see declaration of 'ControllerComponent::gb' (compiling source file ..\..\Source\ControllerComponent.cpp)
-h:\visual studio\creatinganaudioevent\source\controllercomponent.h(20): warning C4458: declaration of 'gb_String' hides class member (compiling source file ..\..\Source\ControllerComponent.cpp)
-  h:\visual studio\creatinganaudioevent\source\controllercomponent.h(37): note: see declaration of 'ControllerComponent::gb_String' (compiling source file ..\..\Source\ControllerComponent.cpp)
-h:\visual studio\creatinganaudioevent\source\controllercomponent.cpp(34): warning C4100: 'sampleRate': unreferenced formal parameter
-h:\visual studio\creatinganaudioevent\source\controllercomponent.cpp(34): warning C4100: 'samplesPerBlockExpected': unreferenced formal parameter
-h:\visual studio\creatinganaudioevent\source\controllercomponent.cpp(38): warning C4100: 'bufferToFill': unreferenced formal parameter
-h:\visual studio\creatinganaudioevent\source\controllercomponent.cpp(73): warning C4100: 'button': unreferenced formal parameter
-h:\visual studio\creatinganaudioevent\source\channelcomponent.cpp(83): warning C4100: 'sampleRate': unreferenced formal parameter
-h:\visual studio\creatinganaudioevent\source\channelcomponent.cpp(83): warning C4100: 'samplesPerBlockExpected': unreferenced formal parameter
-h:\visual studio\creatinganaudioevent\source\channelcomponent.cpp(87): warning C4100: 'bufferToFill': unreferenced formal parameter
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xmemory0(887): error C2248: 'Event::~Event': cannot access private member declared in class 'Event' (compiling source file ..\..\Source\ChannelComponent.cpp)
-  h:\visual studio\creatinganaudioevent\source\channelcomponent.cpp(21): note: compiler has generated 'Event::~Event' here (compiling source file ..\..\Source\ChannelComponent.cpp)
-  h:\visual studio\creatinganaudioevent\source\channelcomponent.cpp(3): note: see declaration of 'Event' (compiling source file ..\..\Source\ChannelComponent.cpp)
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xmemory0(1136): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::destroy<_Ty>(_Alloc &,_Uty *const )' being compiled
-          with
-          [
-              _Alloc=std::allocator<Event>,
-              _Ty=Event,
-              _Uty=Event
-          ] (compiling source file ..\..\Source\ChannelComponent.cpp)
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xmemory0(1136): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::destroy<_Ty>(_Alloc &,_Uty *const )' being compiled
-          with
-          [
-              _Alloc=std::allocator<Event>,
-              _Ty=Event,
-              _Uty=Event
-          ] (compiling source file ..\..\Source\ChannelComponent.cpp)
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xmemory0(1160): note: see reference to function template instantiation 'void std::_Destroy_range1<_Alloc>(Event *,Event *,_Alloc &,std::false_type)' being compiled
-          with
-          [
-              _Alloc=std::allocator<Event>
-          ] (compiling source file ..\..\Source\ChannelComponent.cpp)
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\vector(1849): note: see reference to function template instantiation 'void std::_Destroy_range<std::allocator<_Ty>>(Event *,Event *,_Alloc &)' being compiled
-          with
-          [
-              _Ty=Event,
-              _Alloc=std::allocator<Event>
-          ] (compiling source file ..\..\Source\ChannelComponent.cpp)
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\vector(1848): note: while compiling class template member function 'void std::vector<Event,std::allocator<_Ty>>::_Destroy(Event *,Event *)'
-          with
-          [
-              _Ty=Event
-          ] (compiling source file ..\..\Source\ChannelComponent.cpp)
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\vector(1915): note: see reference to function template instantiation 'void std::vector<Event,std::allocator<_Ty>>::_Destroy(Event *,Event *)' being compiled
-          with
-          [
-              _Ty=Event
-          ] (compiling source file ..\..\Source\ChannelComponent.cpp)
-  h:\visual studio\creatinganaudioevent\source\channelcomponent.cpp(35): note: see reference to class template instantiation 'std::vector<Event,std::allocator<_Ty>>' being compiled
-          with
-          [
-              _Ty=Event
-          ]
+﻿  Main.cpp
+  MainComponent.cpp
+  ControllerComponent.cpp
+h:\juce-spacework\juce-projects\creatinganaudioevent\source\ui\controllercomponent.cpp(39): warning C4100: 'g': unreferenced formal parameter
+h:\juce-spacework\juce-projects\creatinganaudioevent\source\ui\controllercomponent.cpp(81): warning C4458: declaration of 'gb' hides class member
+  h:\juce-spacework\juce-projects\creatinganaudioevent\source\ui\controllercomponent.h(37): note: see declaration of 'ControllerComponent::gb' (compiling source file ..\..\Source\UI\ControllerComponent.cpp)
+h:\juce-spacework\juce-projects\creatinganaudioevent\source\ui\controllercomponent.cpp(84): warning C4458: declaration of 'gb_String' hides class member
+  h:\juce-spacework\juce-projects\creatinganaudioevent\source\ui\controllercomponent.h(39): note: see declaration of 'ControllerComponent::gb_String' (compiling source file ..\..\Source\UI\ControllerComponent.cpp)
+h:\juce-spacework\juce-projects\creatinganaudioevent\source\main.cpp(16): warning C4100: 'commandLine': unreferenced formal parameter
+h:\juce-spacework\juce-projects\creatinganaudioevent\source\main.cpp(38): warning C4100: 'commandLine': unreferenced formal parameter
+  CreatingAnAudioEvent_App.vcxproj -> H:\Juce-spacework\Juce-Projects\CreatingAnAudioEvent\Builds\VisualStudio2017\x64\Debug\App\CreatingAnAudioEvent.exe
