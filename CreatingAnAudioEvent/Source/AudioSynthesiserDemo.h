@@ -47,16 +47,8 @@ struct SynthAudioSource  : public AudioSource
         BigInteger allNotes;
         allNotes.setRange (0, 128, true);
 
-        synth.clearSounds();
-        synth.addSound (new SamplerSound ("demo sound",
-                                          *audioReader,
-                                          allNotes,
-                                          74,   // root midi note
-                                          0.1,  // attack time
-                                          0.1,  // release time
-                                          10.0  // maximum sample length
-                                          ));
-		
+		synth.clearSounds();
+		synth.addSound(new SamplerSound("demo sound", *audioReader, allNotes, 74, 0.0, 0.1, 10.0));
     }
 
 	void setUsingGuitar()
@@ -70,14 +62,7 @@ struct SynthAudioSource  : public AudioSource
 		allNotes.setRange(0, 128, true);
 
 		synth.clearSounds();
-		synth.addSound(new SamplerSound("demo sound",
-			*audioReader,
-			allNotes,
-			74,   // root midi note
-			0.0,  // attack time
-			0.1,  // release time
-			10.0  // maximum sample length
-		));
+		synth.addSound(new SamplerSound("demo sound", *audioReader, allNotes, 74, 0.0, 0.1, 10.0));
 
 	}
 
@@ -175,17 +160,12 @@ public:
 
 	void playRiff()
 	{
-		//NativeMessageBox::showMessageBox(AlertWindow::NoIcon, "The Button Is Working", "the button playRiff is working");
 
-		keyboardState.noteOn(2, 74, 10);
-		if(keyboardState.isNoteOn(2, 74)==true)
-		{
-			NativeMessageBox::showMessageBox(AlertWindow::NoIcon, "The Button Is Working", "the button playRiff is working");
-		}
-	
+		
 
+
+		
 	}
-
     //==============================================================================
     void paint (Graphics& g) override
     {

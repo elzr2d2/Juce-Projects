@@ -1,11 +1,11 @@
-﻿  Main.cpp
+﻿  ControllerComponent.cpp
   MainComponent.cpp
-  ControllerComponent.cpp
+  Main.cpp
+h:\juce-spacework\juce-projects\creatinganaudioevent\source\main.cpp(16): warning C4100: 'commandLine': unreferenced formal parameter
+h:\juce-spacework\juce-projects\creatinganaudioevent\source\main.cpp(38): warning C4100: 'commandLine': unreferenced formal parameter
 h:\juce-spacework\juce-projects\creatinganaudioevent\source\ui\controllercomponent.cpp(39): warning C4100: 'g': unreferenced formal parameter
 h:\juce-spacework\juce-projects\creatinganaudioevent\source\ui\controllercomponent.cpp(81): warning C4458: declaration of 'gb' hides class member
   h:\juce-spacework\juce-projects\creatinganaudioevent\source\ui\controllercomponent.h(37): note: see declaration of 'ControllerComponent::gb' (compiling source file ..\..\Source\UI\ControllerComponent.cpp)
 h:\juce-spacework\juce-projects\creatinganaudioevent\source\ui\controllercomponent.cpp(84): warning C4458: declaration of 'gb_String' hides class member
   h:\juce-spacework\juce-projects\creatinganaudioevent\source\ui\controllercomponent.h(39): note: see declaration of 'ControllerComponent::gb_String' (compiling source file ..\..\Source\UI\ControllerComponent.cpp)
-h:\juce-spacework\juce-projects\creatinganaudioevent\source\main.cpp(16): warning C4100: 'commandLine': unreferenced formal parameter
-h:\juce-spacework\juce-projects\creatinganaudioevent\source\main.cpp(38): warning C4100: 'commandLine': unreferenced formal parameter
   CreatingAnAudioEvent_App.vcxproj -> H:\Juce-spacework\Juce-Projects\CreatingAnAudioEvent\Builds\VisualStudio2017\x64\Debug\App\CreatingAnAudioEvent.exe
