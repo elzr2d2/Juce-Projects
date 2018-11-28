@@ -104,7 +104,7 @@ add_executable (APP
     "~/JUCE/modules/juce_audio_basics/synthesisers/juce_Synthesiser.h"
     "~/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp"
     "~/JUCE/modules/juce_audio_basics/juce_audio_basics.mm"
-    "C:/JUCE/modules/juce_audio_basics/juce_audio_basics.h"
+    "C:/CODE/JUCE/modules/juce_audio_basics/juce_audio_basics.h"
     "~/JUCE/modules/juce_audio_devices/audio_io/juce_AudioDeviceManager.cpp"
     "~/JUCE/modules/juce_audio_devices/audio_io/juce_AudioDeviceManager.h"
     "~/JUCE/modules/juce_audio_devices/audio_io/juce_AudioIODevice.cpp"
@@ -140,7 +140,7 @@ add_executable (APP
     "~/JUCE/modules/juce_audio_devices/sources/juce_AudioTransportSource.h"
     "~/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp"
     "~/JUCE/modules/juce_audio_devices/juce_audio_devices.mm"
-    "C:/JUCE/modules/juce_audio_devices/juce_audio_devices.h"
+    "C:/CODE/JUCE/modules/juce_audio_devices/juce_audio_devices.h"
     "~/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/all.h"
     "~/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitmath.h"
     "~/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitreader.h"
@@ -297,7 +297,7 @@ add_executable (APP
     "~/JUCE/modules/juce_audio_formats/sampler/juce_Sampler.h"
     "~/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp"
     "~/JUCE/modules/juce_audio_formats/juce_audio_formats.mm"
-    "C:/JUCE/modules/juce_audio_formats/juce_audio_formats.h"
+    "C:/CODE/JUCE/modules/juce_audio_formats/juce_audio_formats.h"
     "~/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormat.cpp"
     "~/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormat.h"
     "~/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormatManager.cpp"
@@ -433,7 +433,7 @@ add_executable (APP
     "~/JUCE/modules/juce_audio_processors/utilities/juce_RangedAudioParameter.h"
     "~/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp"
     "~/JUCE/modules/juce_audio_processors/juce_audio_processors.mm"
-    "C:/JUCE/modules/juce_audio_processors/juce_audio_processors.h"
+    "C:/CODE/JUCE/modules/juce_audio_processors/juce_audio_processors.h"
     "~/JUCE/modules/juce_audio_utils/audio_cd/juce_AudioCDBurner.h"
     "~/JUCE/modules/juce_audio_utils/audio_cd/juce_AudioCDReader.cpp"
     "~/JUCE/modules/juce_audio_utils/audio_cd/juce_AudioCDReader.h"
@@ -467,7 +467,7 @@ add_executable (APP
     "~/JUCE/modules/juce_audio_utils/players/juce_SoundPlayer.h"
     "~/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp"
     "~/JUCE/modules/juce_audio_utils/juce_audio_utils.mm"
-    "C:/JUCE/modules/juce_audio_utils/juce_audio_utils.h"
+    "C:/CODE/JUCE/modules/juce_audio_utils/juce_audio_utils.h"
     "~/JUCE/modules/juce_core/containers/juce_AbstractFifo.cpp"
     "~/JUCE/modules/juce_core/containers/juce_AbstractFifo.h"
     "~/JUCE/modules/juce_core/containers/juce_Array.h"
@@ -709,7 +709,7 @@ add_executable (APP
     "~/JUCE/modules/juce_core/zip/juce_ZipFile.h"
     "~/JUCE/modules/juce_core/juce_core.cpp"
     "~/JUCE/modules/juce_core/juce_core.mm"
-    "C:/JUCE/modules/juce_core/juce_core.h"
+    "C:/CODE/JUCE/modules/juce_core/juce_core.h"
     "~/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.cpp"
     "~/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.h"
     "~/JUCE/modules/juce_cryptography/encryption/juce_Primes.cpp"
@@ -724,7 +724,7 @@ add_executable (APP
     "~/JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.h"
     "~/JUCE/modules/juce_cryptography/juce_cryptography.cpp"
     "~/JUCE/modules/juce_cryptography/juce_cryptography.mm"
-    "C:/JUCE/modules/juce_cryptography/juce_cryptography.h"
+    "C:/CODE/JUCE/modules/juce_cryptography/juce_cryptography.h"
     "~/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.cpp"
     "~/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.h"
     "~/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.cpp"
@@ -743,7 +743,60 @@ add_executable (APP
     "~/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h"
     "~/JUCE/modules/juce_data_structures/juce_data_structures.cpp"
     "~/JUCE/modules/juce_data_structures/juce_data_structures.mm"
-    "C:/JUCE/modules/juce_data_structures/juce_data_structures.h"
+    "C:/CODE/JUCE/modules/juce_data_structures/juce_data_structures.h"
+    "~/JUCE/modules/juce_dsp/containers/juce_AudioBlock.h"
+    "~/JUCE/modules/juce_dsp/containers/juce_SIMDRegister.h"
+    "~/JUCE/modules/juce_dsp/containers/juce_SIMDRegister_Impl.h"
+    "~/JUCE/modules/juce_dsp/containers/juce_SIMDRegister_test.cpp"
+    "~/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.cpp"
+    "~/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.h"
+    "~/JUCE/modules/juce_dsp/frequency/juce_Convolution.cpp"
+    "~/JUCE/modules/juce_dsp/frequency/juce_Convolution.h"
+    "~/JUCE/modules/juce_dsp/frequency/juce_FFT.cpp"
+    "~/JUCE/modules/juce_dsp/frequency/juce_FFT.h"
+    "~/JUCE/modules/juce_dsp/frequency/juce_FFT_test.cpp"
+    "~/JUCE/modules/juce_dsp/frequency/juce_Windowing.cpp"
+    "~/JUCE/modules/juce_dsp/frequency/juce_Windowing.h"
+    "~/JUCE/modules/juce_dsp/maths/juce_FastMathApproximations.h"
+    "~/JUCE/modules/juce_dsp/maths/juce_LookupTable.cpp"
+    "~/JUCE/modules/juce_dsp/maths/juce_LookupTable.h"
+    "~/JUCE/modules/juce_dsp/maths/juce_Matrix.cpp"
+    "~/JUCE/modules/juce_dsp/maths/juce_Matrix.h"
+    "~/JUCE/modules/juce_dsp/maths/juce_Matrix_test.cpp"
+    "~/JUCE/modules/juce_dsp/maths/juce_Phase.h"
+    "~/JUCE/modules/juce_dsp/maths/juce_Polynomial.h"
+    "~/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.cpp"
+    "~/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.h"
+    "~/JUCE/modules/juce_dsp/native/juce_avx_SIMDNativeOps.cpp"
+    "~/JUCE/modules/juce_dsp/native/juce_avx_SIMDNativeOps.h"
+    "~/JUCE/modules/juce_dsp/native/juce_fallback_SIMDNativeOps.h"
+    "~/JUCE/modules/juce_dsp/native/juce_neon_SIMDNativeOps.cpp"
+    "~/JUCE/modules/juce_dsp/native/juce_neon_SIMDNativeOps.h"
+    "~/JUCE/modules/juce_dsp/native/juce_sse_SIMDNativeOps.cpp"
+    "~/JUCE/modules/juce_dsp/native/juce_sse_SIMDNativeOps.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_Bias.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_FIRFilter.cpp"
+    "~/JUCE/modules/juce_dsp/processors/juce_FIRFilter.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_FIRFilter_test.cpp"
+    "~/JUCE/modules/juce_dsp/processors/juce_Gain.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_IIRFilter.cpp"
+    "~/JUCE/modules/juce_dsp/processors/juce_IIRFilter.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_LadderFilter.cpp"
+    "~/JUCE/modules/juce_dsp/processors/juce_LadderFilter.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_Oscillator.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_Oversampling.cpp"
+    "~/JUCE/modules/juce_dsp/processors/juce_Oversampling.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_ProcessContext.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_ProcessorDuplicator.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_Reverb.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h"
+    "~/JUCE/modules/juce_dsp/processors/juce_WaveShaper.h"
+    "~/JUCE/modules/juce_dsp/juce_dsp.cpp"
+    "~/JUCE/modules/juce_dsp/juce_dsp.mm"
+    "C:/CODE/JUCE/modules/juce_dsp/juce_dsp.h"
     "~/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.cpp"
     "~/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h"
     "~/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h"
@@ -789,7 +842,7 @@ add_executable (APP
     "~/JUCE/modules/juce_events/timers/juce_Timer.h"
     "~/JUCE/modules/juce_events/juce_events.cpp"
     "~/JUCE/modules/juce_events/juce_events.mm"
-    "C:/JUCE/modules/juce_events/juce_events.h"
+    "C:/CODE/JUCE/modules/juce_events/juce_events.h"
     "~/JUCE/modules/juce_graphics/colour/juce_Colour.cpp"
     "~/JUCE/modules/juce_graphics/colour/juce_Colour.h"
     "~/JUCE/modules/juce_graphics/colour/juce_ColourGradient.cpp"
@@ -954,7 +1007,7 @@ add_executable (APP
     "~/JUCE/modules/juce_graphics/placement/juce_RectanglePlacement.h"
     "~/JUCE/modules/juce_graphics/juce_graphics.cpp"
     "~/JUCE/modules/juce_graphics/juce_graphics.mm"
-    "C:/JUCE/modules/juce_graphics/juce_graphics.h"
+    "C:/CODE/JUCE/modules/juce_graphics/juce_graphics.h"
     "~/JUCE/modules/juce_gui_basics/application/juce_Application.cpp"
     "~/JUCE/modules/juce_gui_basics/application/juce_Application.h"
     "~/JUCE/modules/juce_gui_basics/buttons/juce_ArrowButton.cpp"
@@ -1237,7 +1290,7 @@ add_executable (APP
     "~/JUCE/modules/juce_gui_basics/windows/juce_TopLevelWindow.h"
     "~/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp"
     "~/JUCE/modules/juce_gui_basics/juce_gui_basics.mm"
-    "C:/JUCE/modules/juce_gui_basics/juce_gui_basics.h"
+    "C:/CODE/JUCE/modules/juce_gui_basics/juce_gui_basics.h"
     "~/JUCE/modules/juce_gui_extra/code_editor/juce_CodeDocument.cpp"
     "~/JUCE/modules/juce_gui_extra/code_editor/juce_CodeDocument.h"
     "~/JUCE/modules/juce_gui_extra/code_editor/juce_CodeEditorComponent.cpp"
@@ -1299,7 +1352,7 @@ add_executable (APP
     "~/JUCE/modules/juce_gui_extra/native/juce_win32_WebBrowserComponent.cpp"
     "~/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp"
     "~/JUCE/modules/juce_gui_extra/juce_gui_extra.mm"
-    "C:/JUCE/modules/juce_gui_extra/juce_gui_extra.h"
+    "C:/CODE/JUCE/modules/juce_gui_extra/juce_gui_extra.h"
     "~/JUCE/modules/juce_opengl/geometry/juce_Draggable3DOrientation.h"
     "~/JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h"
     "~/JUCE/modules/juce_opengl/geometry/juce_Quaternion.h"
@@ -1332,7 +1385,7 @@ add_executable (APP
     "~/JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.h"
     "~/JUCE/modules/juce_opengl/juce_opengl.cpp"
     "~/JUCE/modules/juce_opengl/juce_opengl.mm"
-    "C:/JUCE/modules/juce_opengl/juce_opengl.h"
+    "C:/CODE/JUCE/modules/juce_opengl/juce_opengl.h"
     "~/JUCE/modules/juce_video/capture/juce_CameraDevice.cpp"
     "~/JUCE/modules/juce_video/capture/juce_CameraDevice.h"
     "~/JUCE/modules/juce_video/native/juce_android_CameraDevice.h"
@@ -1346,7 +1399,429 @@ add_executable (APP
     "~/JUCE/modules/juce_video/playback/juce_VideoComponent.h"
     "~/JUCE/modules/juce_video/juce_video.cpp"
     "~/JUCE/modules/juce_video/juce_video.mm"
-    "C:/JUCE/modules/juce_video/juce_video.h"
+    "C:/CODE/JUCE/modules/juce_video/juce_video.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/BPMDetect.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/FIFOSampleBuffer.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/FIFOSamplePipe.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/SoundTouch.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/soundtouch_config.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/STTypes.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/AAFilter.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/AAFilter.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/BPMDetect.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/BPMDetect.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/cpu_detect.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/cpu_detect_x86.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/FIFOSampleBuffer.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/FIFOSampleBuffer.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/FIFOSamplePipe.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/FIRFilter.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/FIRFilter.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateCubic.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateCubic.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateLinear.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateLinear.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateShannon.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateShannon.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/mmx_optimized.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/PeakFinder.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/PeakFinder.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/RateTransposer.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/RateTransposer.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/SoundTouch.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/SoundTouch.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/sse_optimized.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/STTypes.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/TDStretch.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/TDStretch.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_FloatAudioFileFormat.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_FloatAudioFileFormat.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_LAMEManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_LAMEManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_RexFileFormat.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_RexFileFormat.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFifo.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFile.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFile.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileCache.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileCache.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileUtils.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileUtils.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileWriter.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFormatManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFormatManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioProxyGenerator.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_LoopInfo.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_LoopInfo.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_RecordingThumbnailManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_SmartThumbnail.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_Thumbnail.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_Thumbnail.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_AlphaTrack.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_AlphaTrack.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieC4.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieC4.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieMCU.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieMCU.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieXT.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieXT.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_NovationAutomap.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_NovationAutomap.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_NovationRemoteSl.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_NovationRemoteSl.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_RemoteSLCompact.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_RemoteSLCompact.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_Tranzport.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_Tranzport.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ControlSurface.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ControlSurface.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_CustomControlSurface.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_CustomControlSurface.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ExternalController.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ExternalController.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ExternalControllerManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ExternalControllerManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_ActiveNoteList.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiChannel.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiControllerEvent.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiExpression.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiList.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiList.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiMessageArray.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiNote.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiProgramManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiProgramManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiSysexEvent.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_Musicality.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_Musicality.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_SelectedMidiEvents.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_SelectedMidiEvents.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_BreakpointOscillatorModifier.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_BreakpointOscillatorModifier.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_EnvelopeFollowerModifier.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_EnvelopeFollowerModifier.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_LFOModifier.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_LFOModifier.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_MIDITrackerModifier.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_MIDITrackerModifier.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_ModifierCommon.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_ModifierCommon.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_ModifierInternal.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_RandomModifier.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_RandomModifier.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_StepModifier.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_StepModifier.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomatableEditItem.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomatableEditItem.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomatableParameter.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomatableParameter.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomatableParameterTree.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomationCurve.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomationCurve.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomationRecordManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomationRecordManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_MacroParameter.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_MacroParameter.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_MidiLearn.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_MidiLearn.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_Modifier.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_Modifier.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_ParameterChangeHandler.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_ParameterChangeHandler.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_ParameterControlMappings.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_ParameterControlMappings.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_AudioClipBase.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_AudioClipBase.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_AudioSegmentList.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_AudioSegmentList.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_ChordClip.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_ChordClip.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_Clip.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_Clip.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_ClipEffects.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_ClipEffects.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_CollectionClip.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_CollectionClip.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_CompManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_CompManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_EditClip.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_EditClip.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_EditClipRenderJob.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_EditClipRenderJob.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_MarkerClip.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_MarkerClip.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_MidiClip.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_MidiClip.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_ReverseRenderJob.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_StepClip.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_StepClip.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_StepClipChannel.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_StepClipPattern.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_WarpTimeManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_WarpTimeManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_WarpTimeRenderJob.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_WaveAudioClip.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_WaveAudioClip.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_Edit.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_Edit.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditFileOperations.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditFileOperations.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditInsertPoint.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditInsertPoint.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditItem.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditItem.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditSnapshot.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditSnapshot.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditUtilities.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditUtilities.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_GrooveTemplate.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_GrooveTemplate.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_MarkerManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_MarkerManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_OldEditConversion.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_PitchSequence.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_PitchSequence.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_PitchSetting.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_PitchSetting.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_QuantisationType.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_QuantisationType.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_SourceFileReference.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_SourceFileReference.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TempoSequence.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TempoSequence.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TempoSetting.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TempoSetting.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TimecodeDisplayFormat.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TimecodeDisplayFormat.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TimeSigSetting.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TimeSigSetting.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_ArchiveFile.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_ArchiveFile.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_Exportable.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_Exportable.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_ExportJob.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_ExportJob.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_ReferencedMaterialList.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_Renderer.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_Renderer.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_RenderManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_RenderManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_RenderOptions.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_RenderOptions.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_AudioTrack.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_AudioTrack.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_AutomationTrack.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_AutomationTrack.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_ChordTrack.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_ChordTrack.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_ClipTrack.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_ClipTrack.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_EditTimeRange.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_EditTimeRange.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_FolderTrack.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_FolderTrack.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_MarkerTrack.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_MarkerTrack.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TempoTrack.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TempoTrack.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_Track.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_Track.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackCompManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackCompManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackItem.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackItem.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackOutput.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackOutput.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackUtils.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackUtils.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_AudioNode.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_AudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_BufferingAudioNode.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_BufferingAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_ClickMutingNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_ClickNode.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_ClickNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_CombiningAudioNode.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_CombiningAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_FadeInOutAudioNode.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_FadeInOutAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_HissingAudioNode.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_HissingAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_MidiAudioNode.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_MidiAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_MixerAudioNode.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_MixerAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_PlayHeadAudioNode.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_PlayHeadAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_SidechainAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_SpeedRampAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_TimedMutingAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_TrackMutingAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_WaveAudioNode.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_WaveAudioNode.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_InputDevice.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_InputDevice.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_MidiInputDevice.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_MidiInputDevice.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_MidiOutputDevice.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_MidiOutputDevice.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_OutputDevice.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_OutputDevice.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_PhysicalMidiInputDevice.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_PhysicalMidiInputDevice.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_VirtualMidiInputDevice.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_VirtualMidiInputDevice.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_WaveInputDevice.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_WaveInputDevice.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_WaveOutputDevice.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_WaveOutputDevice.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_AbletonLink.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_AbletonLink.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_DeviceManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_DeviceManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_EditInputDevices.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_EditInputDevices.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_EditPlaybackContext.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_EditPlaybackContext.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_LevelMeasurer.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_LevelMeasurer.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_MidiNoteDispatcher.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_MidiNoteDispatcher.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_MPEStartTrimmer.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_PlayHead.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_ScopedSteadyLoad.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_TransportControl.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_TransportControl.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/ARA/tracktion_ARAWrapperFunctions.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/ARA/tracktion_ARAWrapperInterfaces.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/ARA/tracktion_MelodyneFileReader.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/ARA/tracktion_MelodyneFileReader.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/ARA/tracktion_MelodyneInstanceFactory.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Chorus.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Chorus.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Compressor.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Compressor.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Delay.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Delay.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Equaliser.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Equaliser.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_LowPass.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_LowPass.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_MidiModifier.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_MidiModifier.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_MidiPatchBay.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_MidiPatchBay.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_PatchBay.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_PatchBay.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Phaser.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Phaser.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_PitchShift.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_PitchShift.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Reverb.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Reverb.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_SamplerPlugin.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_SamplerPlugin.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/external/tracktion_ExternalAutomatableParameter.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/external/tracktion_ExternalPlugin.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/external/tracktion_ExternalPlugin.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/external/tracktion_VSTXML.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_AuxReturn.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_AuxReturn.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_AuxSend.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_AuxSend.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_FreezePoint.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_FreezePoint.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_InsertPlugin.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_InsertPlugin.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_LevelMeter.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_LevelMeter.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_RackInstance.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_RackInstance.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_RackType.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_RackType.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_ReWirePlugin.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_ReWirePlugin.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_TextPlugin.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_TextPlugin.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_VCA.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_VCA.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_VolumeAndPan.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_VolumeAndPan.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_Plugin.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_Plugin.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginList.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginList.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginWindowState.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginWindowState.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_Project.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_Project.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectItem.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectItem.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectItemID.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectItemID.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectSearchIndex.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectSearchIndex.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_Clipboard.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_Clipboard.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_Selectable.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_SelectableClass.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_SelectionManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_SelectionManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/timestretch/tracktion_BeatDetect.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/timestretch/tracktion_TempoDetect.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/timestretch/tracktion_TimeStretch.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/timestretch/tracktion_TimeStretch.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AppFunctions.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AppFunctions.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AsyncFunctionUtils.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AudioFadeCurve.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AudioScratchBuffer.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AudioUtilities.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AudioUtilities.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_BackgroundJobs.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_BinaryData.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_BinaryData.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_ConstrainedCachedValue.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_ConstrainedCachedValue.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_CpuMeasurement.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_CrashTracer.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_CrashTracer.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_CurveEditor.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_CurveEditor.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Ditherer.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Engine.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Engine.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_EngineBehaviour.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_FileUtilities.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_FileUtilities.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Identifiers.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_MiscUtilities.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_MouseHoverDetector.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Pitch.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_PluginComponent.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_PropertyStorage.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_PropertyStorage.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_SettingID.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Spline.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_TemporaryFileManager.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_TemporaryFileManager.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_UIBehaviour.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_UIBehaviour.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_ValueTreeUtilities.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine.h"
+    "../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_audio_files.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_model_1.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_model_2.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_playback.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_plugins.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_timestretch.cpp"
+    "../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_utils.cpp"
+    "C:/CODE/tracktion_engine/modules/tracktion_engine/tracktion_engine.h"
     "../../JuceLibraryCode/AppConfig.h"
     "../../JuceLibraryCode/include_juce_audio_basics.mm"
     "../../JuceLibraryCode/include_juce_audio_devices.mm"
@@ -1356,12 +1831,20 @@ add_executable (APP
     "../../JuceLibraryCode/include_juce_core.mm"
     "../../JuceLibraryCode/include_juce_cryptography.mm"
     "../../JuceLibraryCode/include_juce_data_structures.mm"
+    "../../JuceLibraryCode/include_juce_dsp.mm"
     "../../JuceLibraryCode/include_juce_events.mm"
     "../../JuceLibraryCode/include_juce_graphics.mm"
     "../../JuceLibraryCode/include_juce_gui_basics.mm"
     "../../JuceLibraryCode/include_juce_gui_extra.mm"
     "../../JuceLibraryCode/include_juce_opengl.mm"
     "../../JuceLibraryCode/include_juce_video.mm"
+    "../../JuceLibraryCode/include_tracktion_engine_audio_files.cpp"
+    "../../JuceLibraryCode/include_tracktion_engine_model_1.cpp"
+    "../../JuceLibraryCode/include_tracktion_engine_model_2.cpp"
+    "../../JuceLibraryCode/include_tracktion_engine_playback.cpp"
+    "../../JuceLibraryCode/include_tracktion_engine_plugins.cpp"
+    "../../JuceLibraryCode/include_tracktion_engine_timestretch.cpp"
+    "../../JuceLibraryCode/include_tracktion_engine_utils.cpp"
     "../../JuceLibraryCode/JuceHeader.h"
 )
 
@@ -1446,7 +1929,7 @@ set_source_files_properties ("~/JUCE/modules/juce_audio_basics/synthesisers/juce
 set_source_files_properties ("~/JUCE/modules/juce_audio_basics/synthesisers/juce_Synthesiser.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_basics/juce_audio_basics.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_audio_basics/juce_audio_basics.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_audio_basics/juce_audio_basics.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_devices/audio_io/juce_AudioDeviceManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_devices/audio_io/juce_AudioDeviceManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_devices/audio_io/juce_AudioIODevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -1482,7 +1965,7 @@ set_source_files_properties ("~/JUCE/modules/juce_audio_devices/sources/juce_Aud
 set_source_files_properties ("~/JUCE/modules/juce_audio_devices/sources/juce_AudioTransportSource.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_devices/juce_audio_devices.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_audio_devices/juce_audio_devices.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_audio_devices/juce_audio_devices.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/all.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitmath.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitreader.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -1639,7 +2122,7 @@ set_source_files_properties ("~/JUCE/modules/juce_audio_formats/sampler/juce_Sam
 set_source_files_properties ("~/JUCE/modules/juce_audio_formats/sampler/juce_Sampler.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_formats/juce_audio_formats.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_audio_formats/juce_audio_formats.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_audio_formats/juce_audio_formats.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormat.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormat.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormatManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -1775,7 +2258,7 @@ set_source_files_properties ("~/JUCE/modules/juce_audio_processors/utilities/juc
 set_source_files_properties ("~/JUCE/modules/juce_audio_processors/utilities/juce_RangedAudioParameter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_processors/juce_audio_processors.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_audio_processors/juce_audio_processors.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_audio_processors/juce_audio_processors.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_utils/audio_cd/juce_AudioCDBurner.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_utils/audio_cd/juce_AudioCDReader.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_utils/audio_cd/juce_AudioCDReader.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -1809,7 +2292,7 @@ set_source_files_properties ("~/JUCE/modules/juce_audio_utils/players/juce_Sound
 set_source_files_properties ("~/JUCE/modules/juce_audio_utils/players/juce_SoundPlayer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_audio_utils/juce_audio_utils.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_audio_utils/juce_audio_utils.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_audio_utils/juce_audio_utils.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_core/containers/juce_AbstractFifo.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_core/containers/juce_AbstractFifo.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_core/containers/juce_Array.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2051,7 +2534,7 @@ set_source_files_properties ("~/JUCE/modules/juce_core/zip/juce_ZipFile.cpp" PRO
 set_source_files_properties ("~/JUCE/modules/juce_core/zip/juce_ZipFile.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_core/juce_core.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_core/juce_core.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_core/juce_core.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_core/juce_core.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_cryptography/encryption/juce_Primes.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2066,7 +2549,7 @@ set_source_files_properties ("~/JUCE/modules/juce_cryptography/hashing/juce_Whir
 set_source_files_properties ("~/JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_cryptography/juce_cryptography.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_cryptography/juce_cryptography.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_cryptography/juce_cryptography.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_cryptography/juce_cryptography.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2085,7 +2568,60 @@ set_source_files_properties ("~/JUCE/modules/juce_data_structures/values/juce_Va
 set_source_files_properties ("~/JUCE/modules/juce_data_structures/values/juce_ValueWithDefault.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_data_structures/juce_data_structures.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_data_structures/juce_data_structures.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_data_structures/juce_data_structures.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_data_structures/juce_data_structures.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/containers/juce_AudioBlock.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/containers/juce_SIMDRegister.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/containers/juce_SIMDRegister_Impl.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/containers/juce_SIMDRegister_test.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/filter_design/juce_FilterDesign.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/frequency/juce_Convolution.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/frequency/juce_Convolution.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/frequency/juce_FFT.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/frequency/juce_FFT.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/frequency/juce_FFT_test.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/frequency/juce_Windowing.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/frequency/juce_Windowing.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/maths/juce_FastMathApproximations.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/maths/juce_LookupTable.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/maths/juce_LookupTable.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/maths/juce_Matrix.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/maths/juce_Matrix.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/maths/juce_Matrix_test.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/maths/juce_Phase.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/maths/juce_Polynomial.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/maths/juce_SpecialFunctions.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/native/juce_avx_SIMDNativeOps.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/native/juce_avx_SIMDNativeOps.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/native/juce_fallback_SIMDNativeOps.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/native/juce_neon_SIMDNativeOps.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/native/juce_neon_SIMDNativeOps.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/native/juce_sse_SIMDNativeOps.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/native/juce_sse_SIMDNativeOps.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_Bias.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_FIRFilter.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_FIRFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_FIRFilter_test.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_Gain.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_IIRFilter.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_IIRFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_IIRFilter_Impl.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_LadderFilter.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_LadderFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_Oscillator.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_Oversampling.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_Oversampling.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_ProcessContext.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_ProcessorChain.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_ProcessorDuplicator.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_ProcessorWrapper.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_Reverb.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_StateVariableFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/processors/juce_WaveShaper.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/juce_dsp.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("~/JUCE/modules/juce_dsp/juce_dsp.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_dsp/juce_dsp.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2131,7 +2667,7 @@ set_source_files_properties ("~/JUCE/modules/juce_events/timers/juce_Timer.cpp" 
 set_source_files_properties ("~/JUCE/modules/juce_events/timers/juce_Timer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_events/juce_events.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_events/juce_events.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_events/juce_events.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_events/juce_events.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_graphics/colour/juce_Colour.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_graphics/colour/juce_Colour.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_graphics/colour/juce_ColourGradient.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2296,7 +2832,7 @@ set_source_files_properties ("~/JUCE/modules/juce_graphics/placement/juce_Rectan
 set_source_files_properties ("~/JUCE/modules/juce_graphics/placement/juce_RectanglePlacement.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_graphics/juce_graphics.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_graphics/juce_graphics.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_graphics/juce_graphics.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_graphics/juce_graphics.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_gui_basics/application/juce_Application.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_gui_basics/application/juce_Application.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_gui_basics/buttons/juce_ArrowButton.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2579,7 +3115,7 @@ set_source_files_properties ("~/JUCE/modules/juce_gui_basics/windows/juce_TopLev
 set_source_files_properties ("~/JUCE/modules/juce_gui_basics/windows/juce_TopLevelWindow.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_gui_basics/juce_gui_basics.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_gui_basics/juce_gui_basics.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_gui_basics/juce_gui_basics.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_gui_extra/code_editor/juce_CodeDocument.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_gui_extra/code_editor/juce_CodeDocument.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_gui_extra/code_editor/juce_CodeEditorComponent.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2641,7 +3177,7 @@ set_source_files_properties ("~/JUCE/modules/juce_gui_extra/native/juce_win32_Sy
 set_source_files_properties ("~/JUCE/modules/juce_gui_extra/native/juce_win32_WebBrowserComponent.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_gui_extra/juce_gui_extra.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_gui_extra/juce_gui_extra.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_gui_extra/juce_gui_extra.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_opengl/geometry/juce_Draggable3DOrientation.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_opengl/geometry/juce_Quaternion.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2674,7 +3210,7 @@ set_source_files_properties ("~/JUCE/modules/juce_opengl/utils/juce_OpenGLAppCom
 set_source_files_properties ("~/JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_opengl/juce_opengl.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_opengl/juce_opengl.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_opengl/juce_opengl.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_opengl/juce_opengl.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_video/capture/juce_CameraDevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_video/capture/juce_CameraDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_video/native/juce_android_CameraDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2688,7 +3224,429 @@ set_source_files_properties ("~/JUCE/modules/juce_video/playback/juce_VideoCompo
 set_source_files_properties ("~/JUCE/modules/juce_video/playback/juce_VideoComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_video/juce_video.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("~/JUCE/modules/juce_video/juce_video.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("C:/JUCE/modules/juce_video/juce_video.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/JUCE/modules/juce_video/juce_video.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/BPMDetect.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/FIFOSampleBuffer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/FIFOSamplePipe.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/SoundTouch.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/soundtouch_config.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/include/STTypes.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/AAFilter.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/AAFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/BPMDetect.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/BPMDetect.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/cpu_detect.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/cpu_detect_x86.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/FIFOSampleBuffer.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/FIFOSampleBuffer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/FIFOSamplePipe.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/FIRFilter.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/FIRFilter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateCubic.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateCubic.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateLinear.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateLinear.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateShannon.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/InterpolateShannon.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/mmx_optimized.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/PeakFinder.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/PeakFinder.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/RateTransposer.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/RateTransposer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/SoundTouch.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/SoundTouch.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/sse_optimized.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/STTypes.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/TDStretch.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/3rd_party/soundtouch/source/SoundTouch/TDStretch.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_FloatAudioFileFormat.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_FloatAudioFileFormat.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_LAMEManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_LAMEManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_RexFileFormat.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/formats/tracktion_RexFileFormat.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFifo.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFile.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFile.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileCache.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileCache.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileUtils.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileUtils.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFileWriter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFormatManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioFormatManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_AudioProxyGenerator.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_LoopInfo.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_LoopInfo.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_RecordingThumbnailManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_SmartThumbnail.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_Thumbnail.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/audio_files/tracktion_Thumbnail.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_AlphaTrack.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_AlphaTrack.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieC4.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieC4.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieMCU.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieMCU.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieXT.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_MackieXT.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_NovationAutomap.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_NovationAutomap.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_NovationRemoteSl.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_NovationRemoteSl.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_RemoteSLCompact.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_RemoteSLCompact.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_Tranzport.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/types/tracktion_Tranzport.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ControlSurface.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ControlSurface.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_CustomControlSurface.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_CustomControlSurface.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ExternalController.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ExternalController.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ExternalControllerManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/control_surfaces/tracktion_ExternalControllerManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_ActiveNoteList.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiChannel.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiControllerEvent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiExpression.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiList.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiList.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiMessageArray.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiNote.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiProgramManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiProgramManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_MidiSysexEvent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_Musicality.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_Musicality.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_SelectedMidiEvents.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/midi/tracktion_SelectedMidiEvents.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_BreakpointOscillatorModifier.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_BreakpointOscillatorModifier.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_EnvelopeFollowerModifier.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_EnvelopeFollowerModifier.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_LFOModifier.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_LFOModifier.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_MIDITrackerModifier.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_MIDITrackerModifier.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_ModifierCommon.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_ModifierCommon.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_ModifierInternal.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_RandomModifier.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_RandomModifier.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_StepModifier.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/modifiers/tracktion_StepModifier.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomatableEditItem.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomatableEditItem.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomatableParameter.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomatableParameter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomatableParameterTree.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomationCurve.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomationCurve.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomationRecordManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_AutomationRecordManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_MacroParameter.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_MacroParameter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_MidiLearn.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_MidiLearn.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_Modifier.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_Modifier.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_ParameterChangeHandler.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_ParameterChangeHandler.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_ParameterControlMappings.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/automation/tracktion_ParameterControlMappings.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_AudioClipBase.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_AudioClipBase.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_AudioSegmentList.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_AudioSegmentList.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_ChordClip.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_ChordClip.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_Clip.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_Clip.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_ClipEffects.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_ClipEffects.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_CollectionClip.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_CollectionClip.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_CompManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_CompManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_EditClip.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_EditClip.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_EditClipRenderJob.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_EditClipRenderJob.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_MarkerClip.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_MarkerClip.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_MidiClip.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_MidiClip.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_ReverseRenderJob.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_StepClip.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_StepClip.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_StepClipChannel.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_StepClipPattern.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_WarpTimeManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_WarpTimeManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_WarpTimeRenderJob.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_WaveAudioClip.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/clips/tracktion_WaveAudioClip.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_Edit.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_Edit.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditFileOperations.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditFileOperations.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditInsertPoint.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditInsertPoint.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditItem.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditItem.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditSnapshot.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditSnapshot.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditUtilities.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_EditUtilities.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_GrooveTemplate.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_GrooveTemplate.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_MarkerManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_MarkerManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_OldEditConversion.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_PitchSequence.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_PitchSequence.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_PitchSetting.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_PitchSetting.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_QuantisationType.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_QuantisationType.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_SourceFileReference.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_SourceFileReference.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TempoSequence.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TempoSequence.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TempoSetting.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TempoSetting.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TimecodeDisplayFormat.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TimecodeDisplayFormat.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TimeSigSetting.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/edit/tracktion_TimeSigSetting.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_ArchiveFile.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_ArchiveFile.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_Exportable.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_Exportable.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_ExportJob.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_ExportJob.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_ReferencedMaterialList.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_Renderer.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_Renderer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_RenderManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_RenderManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_RenderOptions.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/export/tracktion_RenderOptions.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_AudioTrack.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_AudioTrack.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_AutomationTrack.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_AutomationTrack.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_ChordTrack.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_ChordTrack.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_ClipTrack.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_ClipTrack.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_EditTimeRange.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_EditTimeRange.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_FolderTrack.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_FolderTrack.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_MarkerTrack.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_MarkerTrack.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TempoTrack.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TempoTrack.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_Track.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_Track.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackCompManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackCompManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackItem.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackItem.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackOutput.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackOutput.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackUtils.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/model/tracks/tracktion_TrackUtils.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_AudioNode.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_AudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_BufferingAudioNode.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_BufferingAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_ClickMutingNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_ClickNode.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_ClickNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_CombiningAudioNode.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_CombiningAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_FadeInOutAudioNode.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_FadeInOutAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_HissingAudioNode.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_HissingAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_MidiAudioNode.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_MidiAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_MixerAudioNode.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_MixerAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_PlayHeadAudioNode.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_PlayHeadAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_SidechainAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_SpeedRampAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_TimedMutingAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_TrackMutingAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_WaveAudioNode.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/audionodes/tracktion_WaveAudioNode.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_InputDevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_InputDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_MidiInputDevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_MidiInputDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_MidiOutputDevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_MidiOutputDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_OutputDevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_OutputDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_PhysicalMidiInputDevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_PhysicalMidiInputDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_VirtualMidiInputDevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_VirtualMidiInputDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_WaveInputDevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_WaveInputDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_WaveOutputDevice.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/devices/tracktion_WaveOutputDevice.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_AbletonLink.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_AbletonLink.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_DeviceManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_DeviceManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_EditInputDevices.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_EditInputDevices.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_EditPlaybackContext.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_EditPlaybackContext.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_LevelMeasurer.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_LevelMeasurer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_MidiNoteDispatcher.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_MidiNoteDispatcher.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_MPEStartTrimmer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_PlayHead.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_ScopedSteadyLoad.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_TransportControl.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/playback/tracktion_TransportControl.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/ARA/tracktion_ARAWrapperFunctions.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/ARA/tracktion_ARAWrapperInterfaces.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/ARA/tracktion_MelodyneFileReader.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/ARA/tracktion_MelodyneFileReader.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/ARA/tracktion_MelodyneInstanceFactory.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Chorus.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Chorus.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Compressor.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Compressor.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Delay.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Delay.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Equaliser.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Equaliser.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_LowPass.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_LowPass.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_MidiModifier.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_MidiModifier.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_MidiPatchBay.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_MidiPatchBay.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_PatchBay.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_PatchBay.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Phaser.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Phaser.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_PitchShift.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_PitchShift.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Reverb.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_Reverb.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_SamplerPlugin.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/effects/tracktion_SamplerPlugin.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/external/tracktion_ExternalAutomatableParameter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/external/tracktion_ExternalPlugin.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/external/tracktion_ExternalPlugin.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/external/tracktion_VSTXML.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_AuxReturn.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_AuxReturn.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_AuxSend.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_AuxSend.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_FreezePoint.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_FreezePoint.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_InsertPlugin.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_InsertPlugin.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_LevelMeter.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_LevelMeter.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_RackInstance.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_RackInstance.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_RackType.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_RackType.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_ReWirePlugin.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_ReWirePlugin.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_TextPlugin.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_TextPlugin.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_VCA.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_VCA.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_VolumeAndPan.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/internal/tracktion_VolumeAndPan.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_Plugin.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_Plugin.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginList.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginList.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginWindowState.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/plugins/tracktion_PluginWindowState.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_Project.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_Project.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectItem.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectItem.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectItemID.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectItemID.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectSearchIndex.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/project/tracktion_ProjectSearchIndex.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_Clipboard.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_Clipboard.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_Selectable.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_SelectableClass.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_SelectionManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/selection/tracktion_SelectionManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/timestretch/tracktion_BeatDetect.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/timestretch/tracktion_TempoDetect.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/timestretch/tracktion_TimeStretch.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/timestretch/tracktion_TimeStretch.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AppFunctions.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AppFunctions.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AsyncFunctionUtils.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AudioFadeCurve.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AudioScratchBuffer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AudioUtilities.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_AudioUtilities.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_BackgroundJobs.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_BinaryData.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_BinaryData.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_ConstrainedCachedValue.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_ConstrainedCachedValue.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_CpuMeasurement.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_CrashTracer.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_CrashTracer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_CurveEditor.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_CurveEditor.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Ditherer.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Engine.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Engine.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_EngineBehaviour.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_FileUtilities.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_FileUtilities.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Identifiers.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_MiscUtilities.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_MouseHoverDetector.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Pitch.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_PluginComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_PropertyStorage.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_PropertyStorage.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_SettingID.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_Spline.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_TemporaryFileManager.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_TemporaryFileManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_UIBehaviour.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_UIBehaviour.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/utilities/tracktion_ValueTreeUtilities.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_audio_files.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_model_1.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_model_2.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_playback.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_plugins.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_timestretch.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../JuceLibraryCode/modules/tracktion_engine/tracktion_engine_utils.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("C:/CODE/tracktion_engine/modules/tracktion_engine/tracktion_engine.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/AppConfig.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/JuceHeader.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 
@@ -2703,6 +3661,7 @@ execute_process (COMMAND uname -m OUTPUT_VARIABLE JUCE_ARCH_LABEL OUTPUT_STRIP_T
 target_include_directories (APP PRIVATE
     "../../JuceLibraryCode"
     "$ENV{HOME}/JUCE/modules"
+    "../../JuceLibraryCode/modules"
 )
 
 target_compile_definitions (APP PRIVATE
@@ -2781,6 +3740,7 @@ execute_process (COMMAND uname -m OUTPUT_VARIABLE JUCE_ARCH_LABEL OUTPUT_STRIP_T
 target_include_directories (APP PRIVATE
     "../../JuceLibraryCode"
     "$ENV{HOME}/JUCE/modules"
+    "../../JuceLibraryCode/modules"
 )
 
 target_compile_definitions (APP PRIVATE

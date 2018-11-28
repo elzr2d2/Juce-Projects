@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "../modules/tracktion_engine/tracktion_engine.h"
 #include "DemoUtilities.h"
 #include "AudioLiveScrollingDisplay.h"
 
@@ -53,9 +54,16 @@ struct SynthAudioSource  : public AudioSource
 
 	void setUsingGuitar()
 	{
+		/**/
+
+	}
+
+	void setUsingMySound()
+	{
+
 		WavAudioFormat wavFormat;
 
-		std::unique_ptr<AudioFormatReader> audioReader(wavFormat.createReaderFor(createAssetInputStream("H:\\Juce-spacework\\SynthDemo\\AudioSynthDemo\\AudioSynthesiserDemo\\Guitar.wav"), true)); 
+		std::unique_ptr<AudioFormatReader> audioReader(wavFormat.createReaderFor(createAssetInputStream("H:\\Juce-spacework\\SynthDemo\\AudioSynthDemo\\AudioSynthesiserDemo\\Guitar.wav"), true));
 
 
 		BigInteger allNotes;
@@ -125,6 +133,10 @@ public:
 		guitarButton.setRadioGroupId(321);
 		guitarButton.onClick = [this] { synthAudioSource.setUsingGuitar(); };
 
+		addAndMakeVisible(mySoundButton);
+		mySoundButton.setRadioGroupId(321);
+		mySoundButton.onClick = [this] { synthAudioSource.setUsingMySound(); };
+
         addAndMakeVisible (liveAudioDisplayComp);
         audioDeviceManager.addAudioCallback (&liveAudioDisplayComp);
         audioSourcePlayer.setSource (&synthAudioSource);
@@ -178,6 +190,7 @@ public:
         //sineButton          .setBounds (16, 176, 150, 24);
 		bellButton			.setBounds (16, 200, 150, 24);
 		guitarButton	  .setBounds(16, 225, 150, 24);
+		mySoundButton.setBounds(16, 250, 150, 24);
         liveAudioDisplayComp.setBounds (8, 8, getWidth() - 16, 64);
     }
 
@@ -200,12 +213,43 @@ private:
     //ToggleButton sineButton     { "Use sine wave" };
     ToggleButton  bellButton{ "Bell" };
 	ToggleButton guitarButton{ "Guitar" };
+	ToggleButton mySoundButton{ "My Sound" };
 
 	TimeCounter tc;
 
 	Synthesiser synth;
 
     LiveScrollingAudioDisplay liveAudioDisplayComp;
+
+	//using tracktion
+
+	te::Engine engine { ProjectInfo::projectName };
+    te::Edit edit { engine, te::createEmptyEdit(), te::Edit::forEditing, nullptr, 0 };
+    te::TransportControl& transport { edit.getTransport() };
+
+    FileChooser audioFileChooser { "Please select an audio file to load...",
+                                   engine.getPropertyStorage().getDefaultLoadSaveDirectory ("pitchAndTimeExample"),
+                                   engine.getAudioFileFormatManager().readFormatManager.getWildcardForAllFormats() };
+
+   
+
+    //==============================================================================
+    te::WaveAudioClip::Ptr getClip()
+    {
+        if (auto track = edit.getOrInsertAudioTrackAt (0))
+            if (auto clip = dynamic_cast<te::WaveAudioClip*> (track->getClips()[0]))
+                return *clip;
+
+        return {};
+    }
+
+    File getSourceFile()
+    {
+        if (auto clip = getClip())
+            return clip->getSourceFileReference().getFile();
+
+        return {};
+    }
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AudioSynthesiserDemo)
 };
