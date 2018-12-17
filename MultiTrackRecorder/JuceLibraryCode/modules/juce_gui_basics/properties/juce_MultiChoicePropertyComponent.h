@@ -67,6 +67,7 @@ public:
     /** Creates the component using a ValueWithDefault object. This will select the default options.
 
         @param valueToControl       the ValueWithDefault object that contains the Value object that the ToggleButtons will read and control.
+                                    NB: This object must outlive the MultiChoicePropertyComponent.
         @param propertyName         the name of the property
         @param choices              the list of possible values that will be represented
         @param correspondingValues  a list of values corresponding to each item in the 'choices' StringArray.
@@ -118,7 +119,7 @@ private:
     void lookAndFeelChanged() override;
 
     //==============================================================================
-    WeakReference<ValueWithDefault> valueWithDefault;
+    ValueWithDefault* valueWithDefault = nullptr;
 
     int maxHeight = 0;
     int numHidden = 0;

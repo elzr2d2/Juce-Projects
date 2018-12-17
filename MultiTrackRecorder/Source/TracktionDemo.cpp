@@ -2,6 +2,8 @@
 
 using namespace tracktion_engine;
 
+
+
 void PlaybackDemo::addNewClipFromFile(const File& editFile, int trackNum)
 {
 	auto clip = loadAudioFileAsClip(editFile, trackNum);
@@ -20,20 +22,22 @@ void PlaybackDemo::initTransport()
 	transport.addChangeListener(this);
 }
 
+
 PlaybackDemo::PlaybackDemo()
 {
+	addAndMakeVisible(playPauseButton);
+	addAndMakeVisible(settingsButton);
+	addAndMakeVisible(addChannelButton);
+
 	edit = std::make_unique<Edit>(engine, createEmptyEdit(), Edit::forEditing, nullptr, 0);
 
-	String editFilePath = "C:/Song/Wave.wav";
-	const File editFile(editFilePath);
-	addNewClipFromFile(editFile, 0);
-
-	String editFilePath2 = "C:/Song/Kick 1.wav";
-	const File editFile2(editFilePath2);
-	addNewClipFromFile(editFile2, 1);
+	addChannelButton.onClick = [this] { PlaybackDemo::openButtonClicked(); };
+	
+	
 
 	initTransport();
 
+	
 	playPauseButton.onClick = [this] { EngineHelpers::togglePlay(*edit); };
 	settingsButton.onClick = [this] { EngineHelpers::showAudioDeviceSettings(engine); };
 
@@ -55,10 +59,29 @@ PlaybackDemo::~PlaybackDemo()
 	engine.getTemporaryFileManager().getTempDirectory().deleteRecursively();
 }
 
+
+
+void PlaybackDemo::openButtonClicked()
+{
+
+	fc.reset(new FileChooser("Choose a file to open...", File::getCurrentWorkingDirectory(), "*wav"));
+	
+	fc->launchAsync(FileBrowserComponent::canSelectMultipleItems | FileBrowserComponent::openMode | FileBrowserComponent::canSelectFiles,
+		[&](const FileChooser& chooser)
+		{
+
+			addNewClipFromFile(chooser.getResult(), trackNum++);
+			
+		});
+}
+
+
 void PlaybackDemo::paint(Graphics& g)
 {
 	g.fillAll(getLookAndFeel().findColour(ResizableWindow::backgroundColourId));
 }
+
+
 
 void PlaybackDemo::resized()
 {
@@ -67,6 +90,7 @@ void PlaybackDemo::resized()
 
 	settingsButton.setBounds(topR.removeFromLeft(topR.getWidth() / 2).reduced(2));
 	playPauseButton.setBounds(topR.reduced(2));
+	addChannelButton.setBounds(0,playPauseButton.getBottom(),50,50);
 }
 
 void PlaybackDemo::removeAllClips(AudioTrack& track)

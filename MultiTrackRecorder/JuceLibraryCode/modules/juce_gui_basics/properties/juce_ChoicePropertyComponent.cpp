@@ -83,9 +83,6 @@ public:
 
     var getValue() const override
     {
-        if (valueWithDefault == nullptr)
-            return {};
-
         if (valueWithDefault->isUsingDefault())
             return -1;
 
@@ -100,9 +97,6 @@ public:
 
     void setValue (const var& newValue) override
     {
-        if (valueWithDefault == nullptr)
-            return;
-
         auto newValueInt = static_cast<int> (newValue);
 
         if (newValueInt == -1)
@@ -121,7 +115,7 @@ public:
 private:
     void valueChanged (Value&) override { sendChangeMessage (true); }
 
-    WeakReference<ValueWithDefault> valueWithDefault;
+    ValueWithDefault* valueWithDefault = nullptr;
     Value sourceValue;
     Array<var> mappings;
 

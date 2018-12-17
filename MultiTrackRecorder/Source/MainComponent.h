@@ -20,6 +20,7 @@ public:
     void getNextAudioBlock (const AudioSourceChannelInfo& bufferToFill) override;
     void releaseResources() override;
 
+
     //==============================================================================
     void paint (Graphics& g) override;
     void resized() override;

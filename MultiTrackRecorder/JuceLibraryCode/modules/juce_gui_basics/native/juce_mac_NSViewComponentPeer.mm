@@ -122,8 +122,6 @@ public:
            #if defined (MAC_OS_X_VERSION_10_14)
             if (! [window isOpaque])
                 [window setBackgroundColor: [NSColor clearColor]];
-
-            [view setAppearance: [NSAppearance appearanceNamed: NSAppearanceNameAqua]];
            #endif
 
             [window setHasShadow: ((windowStyleFlags & windowHasDropShadow) != 0)];
@@ -1701,9 +1699,10 @@ private:
         if (auto* p = getOwner (self))
         {
             if (p->wasAlwaysOnTop)
+            {
                 p->setAlwaysOnTop (true);
-
-            p->redirectMovedOrResized();
+                p->redirectMovedOrResized();
+            }
         }
     }
 

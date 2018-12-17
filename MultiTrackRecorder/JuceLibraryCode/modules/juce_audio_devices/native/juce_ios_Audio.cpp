@@ -486,11 +486,11 @@ struct iOSAudioIODevice::Pimpl      : public AudioPlayHead,
         {
             isRunning = false;
 
-            if (audioUnit != nullptr)
+            if (audioUnit != 0)
             {
                 AudioOutputUnitStart (audioUnit);
                 AudioComponentInstanceDispose (audioUnit);
-                audioUnit = nullptr;
+                audioUnit = 0;
             }
 
             setAudioSessionActive (false);
@@ -819,9 +819,6 @@ struct iOSAudioIODevice::Pimpl      : public AudioPlayHead,
             {
                 AudioOutputUnitStop (audioUnit);
                 setAudioSessionActive (false);
-
-                if (callback != nullptr)
-                    callback->audioDeviceStopped();
             }
         }
     }
@@ -930,10 +927,10 @@ struct iOSAudioIODevice::Pimpl      : public AudioPlayHead,
     {
         JUCE_IOS_AUDIO_LOG ("Creating the audio unit");
 
-        if (audioUnit != nullptr)
+        if (audioUnit != 0)
         {
             AudioComponentInstanceDispose (audioUnit);
-            audioUnit = nullptr;
+            audioUnit = 0;
         }
 
         AudioComponentDescription desc;
@@ -943,10 +940,10 @@ struct iOSAudioIODevice::Pimpl      : public AudioPlayHead,
         desc.componentFlags = 0;
         desc.componentFlagsMask = 0;
 
-        AudioComponent comp = AudioComponentFindNext (nullptr, &desc);
+        AudioComponent comp = AudioComponentFindNext (0, &desc);
         AudioComponentInstanceNew (comp, &audioUnit);
 
-        if (audioUnit == nullptr)
+        if (audioUnit == 0)
             return false;
 
        #if JucePlugin_Enable_IAA
@@ -1085,10 +1082,10 @@ struct iOSAudioIODevice::Pimpl      : public AudioPlayHead,
 
         if (isRunning)
         {
-            if (audioUnit != nullptr)
+            if (audioUnit != 0)
             {
                 AudioComponentInstanceDispose (audioUnit);
-                audioUnit = nullptr;
+                audioUnit = 0;
 
                 if (callback != nullptr)
                     callback->audioDeviceStopped();
@@ -1098,7 +1095,7 @@ struct iOSAudioIODevice::Pimpl      : public AudioPlayHead,
 
             createAudioUnit();
 
-            if (audioUnit != nullptr)
+            if (audioUnit != 0)
             {
                 isRunning = true;
 
