@@ -44,8 +44,6 @@ private:
 
 	int trackNum = 0;
 
-	const File editFile;
-	String editFilePath;
 	std::unique_ptr<FileChooser> fc;
 
 	

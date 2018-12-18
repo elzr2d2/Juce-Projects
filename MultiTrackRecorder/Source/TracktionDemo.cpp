@@ -6,6 +6,7 @@ using namespace tracktion_engine;
 
 void PlaybackDemo::addNewClipFromFile(const File& editFile, int trackNum)
 {
+	//AlertWindow::showMessageBox(AlertWindow::AlertIconType::NoIcon,"addNewClipFromFile test","great!");
 	auto clip = loadAudioFileAsClip(editFile, trackNum);
 
 	if (clip != nullptr)
@@ -14,6 +15,7 @@ void PlaybackDemo::addNewClipFromFile(const File& editFile, int trackNum)
 
 void PlaybackDemo::initTransport()
 {
+	//AlertWindow::showMessageBox(AlertWindow::AlertIconType::NoIcon,"initTransport test","great!");
 	auto& transport = edit->getTransport();
 
 	transport.setLoopRange({0.0, edit->getLength()});
@@ -25,23 +27,24 @@ void PlaybackDemo::initTransport()
 
 PlaybackDemo::PlaybackDemo()
 {
-	addAndMakeVisible(playPauseButton);
-	addAndMakeVisible(settingsButton);
-	addAndMakeVisible(addChannelButton);
+	
 
 	edit = std::make_unique<Edit>(engine, createEmptyEdit(), Edit::forEditing, nullptr, 0);
 
-	addChannelButton.onClick = [this] { PlaybackDemo::openButtonClicked(); };
-	
-	
 
 	initTransport();
 
 	
 	playPauseButton.onClick = [this] { EngineHelpers::togglePlay(*edit); };
 	settingsButton.onClick = [this] { EngineHelpers::showAudioDeviceSettings(engine); };
+	addChannelButton.onClick = [this] { PlaybackDemo::openButtonClicked(); };
+	
 
 	updatePlayButtonText();
+
+	addAndMakeVisible(playPauseButton);
+	addAndMakeVisible(settingsButton);
+	addAndMakeVisible(addChannelButton);
 
 	setSize(600, 400);
 }
@@ -66,12 +69,16 @@ void PlaybackDemo::openButtonClicked()
 
 	fc.reset(new FileChooser("Choose a file to open...", File::getCurrentWorkingDirectory(), "*wav"));
 	
+
+									/*LAMBADA FUNCTION FOR FILE CHOOSER*/
 	fc->launchAsync(FileBrowserComponent::canSelectMultipleItems | FileBrowserComponent::openMode | FileBrowserComponent::canSelectFiles,
 		[&](const FileChooser& chooser)
 		{
-
-			addNewClipFromFile(chooser.getResult(), trackNum++);
 			
+			const File file = chooser.getResult();
+			addNewClipFromFile(file, trackNum++);
+
+			initTransport();
 		});
 }
 
@@ -125,6 +132,8 @@ WaveAudioClip::Ptr PlaybackDemo::loadAudioFileAsClip(const File& file, int track
 				return newClip;
 		}
 	}
+
+	
 
 	return nullptr;
 }
