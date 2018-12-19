@@ -27,24 +27,31 @@ void PlaybackDemo::initTransport()
 
 PlaybackDemo::PlaybackDemo()
 {
-	
 
 	edit = std::make_unique<Edit>(engine, createEmptyEdit(), Edit::forEditing, nullptr, 0);
 
 
-	initTransport();
 
-	
+											/*Buttons functionality*/
 	playPauseButton.onClick = [this] { EngineHelpers::togglePlay(*edit); };
 	settingsButton.onClick = [this] { EngineHelpers::showAudioDeviceSettings(engine); };
-	addChannelButton.onClick = [this] { PlaybackDemo::openButtonClicked(); };
-	
+	addChannelButton.onClick = [this] { PlaybackDemo::addChannelButtonClicked(); };
+	removeChannelButton.onClick = [this] { PlaybackDemo::removeChannelButtonClicked(); };
+
 
 	updatePlayButtonText();
-
+									
+	
+											/*Buttons visibility*/
 	addAndMakeVisible(playPauseButton);
+	
 	addAndMakeVisible(settingsButton);
+	
 	addAndMakeVisible(addChannelButton);
+	
+	addAndMakeVisible(removeChannelButton);
+	removeChannelButton.setEnabled(false);
+
 
 	setSize(600, 400);
 }
@@ -64,7 +71,7 @@ PlaybackDemo::~PlaybackDemo()
 
 
 
-void PlaybackDemo::openButtonClicked()
+void PlaybackDemo::addChannelButtonClicked()
 {
 
 	fc.reset(new FileChooser("Choose a file to open...", File::getCurrentWorkingDirectory(), "*wav"));
@@ -79,7 +86,27 @@ void PlaybackDemo::openButtonClicked()
 			addNewClipFromFile(file, trackNum++);
 
 			initTransport();
+			removeChannelButton.setEnabled(true);
 		});
+}
+
+void PlaybackDemo::removeChannelButtonClicked()
+{
+
+	if (trackNum > 0)
+	{
+		if (trackNum - 1 == 0)
+		{
+			auto& track = edit->getOrInsertAudioTrackAt(--trackNum);
+			removeTrack(*track);
+			removeChannelButton.setEnabled(false);
+		}
+		else
+		{
+			auto& track = edit->getOrInsertAudioTrackAt(--trackNum);
+			removeTrack(*track);
+		}
+	}
 }
 
 
@@ -98,6 +125,7 @@ void PlaybackDemo::resized()
 	settingsButton.setBounds(topR.removeFromLeft(topR.getWidth() / 2).reduced(2));
 	playPauseButton.setBounds(topR.reduced(2));
 	addChannelButton.setBounds(0,playPauseButton.getBottom(),50,50);
+	removeChannelButton.setBounds(addChannelButton.getWidth()+5, playPauseButton.getBottom(), 50, 50);
 }
 
 void PlaybackDemo::removeAllClips(AudioTrack& track)
@@ -106,6 +134,13 @@ void PlaybackDemo::removeAllClips(AudioTrack& track)
 
 	for (int i = clips.size(); --i >= 0;)
 		clips.getUnchecked(i)->removeFromParentTrack();
+}
+
+void PlaybackDemo::removeTrack(AudioTrack& track)
+{
+	auto& clips = track.getClips();
+
+	clips.getUnchecked(trackNum)->removeFromParentTrack();
 }
 
 WaveAudioClip::Ptr PlaybackDemo::loadAudioFileAsClip(const File& file, int trackNumber)

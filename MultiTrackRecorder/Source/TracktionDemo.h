@@ -13,8 +13,9 @@ public:
 
 	void paint(Graphics& g) override;
 	void resized() override;
-	void PlaybackDemo::openButtonClicked();
-
+	void PlaybackDemo::addChannelButtonClicked();
+	void PlaybackDemo::removeChannelButtonClicked();
+	void removeTrack(te::AudioTrack & track);
 
 
 private:
@@ -27,6 +28,8 @@ private:
 	
 
 	void removeAllClips(te::AudioTrack& track);
+
+
 	
 
 	void adjustClipProperties(tracktion_engine::WaveAudioClip& clip) const;
@@ -40,7 +43,8 @@ private:
 	te::Engine engine{ProjectInfo::projectName};
 	std::unique_ptr<te::Edit> edit;
 
-	TextButton settingsButton{ "Settings" }, playPauseButton{ "Play" }, addChannelButton{ "+" };
+
+	TextButton settingsButton{ "Settings" }, playPauseButton{ "Play" }, addChannelButton{ "+" }, removeChannelButton{ "-" };
 
 	int trackNum = 0;
 
