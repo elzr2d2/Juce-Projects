@@ -138,6 +138,8 @@
     <Lib/>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\AudioRecord.cpp"/>
+    <ClCompile Include="..\..\Source\Channel.cpp"/>
     <ClCompile Include="..\..\Source\TracktionDemoUtilities.cpp"/>
     <ClCompile Include="..\..\Source\TracktionDemo.cpp"/>
     <ClCompile Include="..\..\Source\MainComponent.cpp"/>
@@ -2486,6 +2488,8 @@
     <ClCompile Include="..\..\JuceLibraryCode\include_tracktion_engine_utils.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\AudioRecord.h"/>
+    <ClInclude Include="..\..\Source\Channel.h"/>
     <ClInclude Include="..\..\Source\TracktionDemoUtilities.h"/>
     <ClInclude Include="..\..\Source\TracktionDemo.h"/>
     <ClInclude Include="..\..\Source\MainComponent.h"/>

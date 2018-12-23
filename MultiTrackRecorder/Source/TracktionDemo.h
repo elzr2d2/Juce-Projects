@@ -3,6 +3,8 @@
 #include "JuceHeader.h"
 
 #include "TracktionDemoUtilities.h"
+#include "Channel.h"
+#include "AudioRecord.h"
 
 class PlaybackDemo : public Component,
                      private ChangeListener
@@ -43,8 +45,9 @@ private:
 	te::Engine engine{ProjectInfo::projectName};
 	std::unique_ptr<te::Edit> edit;
 
-
-	TextButton settingsButton{ "Settings" }, playPauseButton{ "Play" }, addChannelButton{ "+" }, removeChannelButton{ "-" };
+	
+	TextButton settingsButton{ "Settings" }, playPauseButton{ "Play" }, recordButton{ "Record" }, addChannelButton{ "+" }, removeChannelButton{ "-" };
+	
 
 	int trackNum = 0;
 

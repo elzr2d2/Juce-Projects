@@ -511,6 +511,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\AudioRecord.cpp">
+      <Filter>MultiTrackRecorder\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Channel.cpp">
+      <Filter>MultiTrackRecorder\Source</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TracktionDemoUtilities.cpp">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClCompile>
@@ -3024,6 +3030,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\AudioRecord.h">
+      <Filter>MultiTrackRecorder\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Channel.h">
+      <Filter>MultiTrackRecorder\Source</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\TracktionDemoUtilities.h">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClInclude>
