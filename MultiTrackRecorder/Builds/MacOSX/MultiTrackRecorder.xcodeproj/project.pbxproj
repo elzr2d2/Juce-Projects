@@ -57,13 +57,17 @@
 			isa = PBXBuildFile;
 			fileRef = 15CFED6B57793F43AEA874D6;
 		};
-		E7D1B3B7DD468E4EC5C2218D = {
+		385B7D4C2D44C96D5112212D = {
 			isa = PBXBuildFile;
-			fileRef = 296ED5A2B57DF12A6ACB3CBC;
+			fileRef = 9F425944AE86BD82115EE53D;
 		};
-		6A35AE488FE47B58AA418C3B = {
+		25D46F5FAB49A9F1B344A6EC = {
 			isa = PBXBuildFile;
-			fileRef = 0F4D2AD5E14D0F966A9D38E4;
+			fileRef = C1EC4BE10542C91B73121A82;
+		};
+		CA8C44D5DF325EC655F6FF48 = {
+			isa = PBXBuildFile;
+			fileRef = D92EC83D05B1E5860125ACA8;
 		};
 		A6A810B5A18D28A0DA2FAC61 = {
 			isa = PBXBuildFile;
@@ -196,20 +200,6 @@
 			path = MultiTrackRecorder.app;
 			sourceTree = "BUILT_PRODUCTS_DIR";
 		};
-		0D375FB6879C08B4306FE0A5 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = AudioRecord.h;
-			path = ../../Source/AudioRecord.h;
-			sourceTree = "SOURCE_ROOT";
-		};
-		0F4D2AD5E14D0F966A9D38E4 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.cpp;
-			name = Channel.cpp;
-			path = ../../Source/Channel.cpp;
-			sourceTree = "SOURCE_ROOT";
-		};
 		1501F9DEEC77B59AB0F23EF1 = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -273,13 +263,6 @@
 			path = "../../JuceLibraryCode/include_tracktion_engine_model_2.cpp";
 			sourceTree = "SOURCE_ROOT";
 		};
-		296ED5A2B57DF12A6ACB3CBC = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.cpp;
-			name = AudioRecord.cpp;
-			path = ../../Source/AudioRecord.cpp;
-			sourceTree = "SOURCE_ROOT";
-		};
 		2C263B85EE4C667893D0A7B4 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -292,6 +275,13 @@
 			lastKnownFileType = sourcecode.cpp.cpp;
 			name = "include_tracktion_engine_plugins.cpp";
 			path = "../../JuceLibraryCode/include_tracktion_engine_plugins.cpp";
+			sourceTree = "SOURCE_ROOT";
+		};
+		314FC972BDB84D4AE7B78713 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = RecordingThumbnail.h;
+			path = ../../Source/RecordingThumbnail.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		35295A5C680DEF772ADC4C8B = {
@@ -476,6 +466,13 @@
 			path = "../../JuceLibraryCode/modules/juce_audio_devices";
 			sourceTree = "SOURCE_ROOT";
 		};
+		9F425944AE86BD82115EE53D = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = AudioRecordingDemo.cpp;
+			path = ../../Source/AudioRecordingDemo.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		A4EFC3BEE066FA992B2A2ED5 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.h;
@@ -495,6 +492,13 @@
 			lastKnownFileType = sourcecode.cpp.cpp;
 			name = TracktionDemo.cpp;
 			path = ../../Source/TracktionDemo.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		AB76714F814886BFE7274CCF = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = AudioRecorder.h;
+			path = ../../Source/AudioRecorder.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		B30B47277F59371E915C298F = {
@@ -539,6 +543,13 @@
 			path = "../../JuceLibraryCode/modules/juce_audio_processors";
 			sourceTree = "SOURCE_ROOT";
 		};
+		C1EC4BE10542C91B73121A82 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = RecordingThumbnail.cpp;
+			path = ../../Source/RecordingThumbnail.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		C1F63CAEA2D181426B76AD6C = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -551,6 +562,13 @@
 			lastKnownFileType = file;
 			name = "tracktion_engine";
 			path = "../../JuceLibraryCode/modules/tracktion_engine";
+			sourceTree = "SOURCE_ROOT";
+		};
+		D92EC83D05B1E5860125ACA8 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = AudioRecorder.cpp;
+			path = ../../Source/AudioRecorder.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
 		D9F87B575C561B79F13630CE = {
@@ -574,11 +592,11 @@
 			path = "../../JuceLibraryCode/modules/juce_gui_extra";
 			sourceTree = "SOURCE_ROOT";
 		};
-		F2BEE6E3EAE37286DE27400E = {
+		F81604D77D4ABFC827F0CB94 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.h;
-			name = Channel.h;
-			path = ../../Source/Channel.h;
+			name = AudioRecordingDemo.h;
+			path = ../../Source/AudioRecordingDemo.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		FA8EBADE7AD333C31E7DF7B1 = {
@@ -591,10 +609,12 @@
 		11E2735FF160C8F0DCD62A31 = {
 			isa = PBXGroup;
 			children = (
-				296ED5A2B57DF12A6ACB3CBC,
-				0D375FB6879C08B4306FE0A5,
-				0F4D2AD5E14D0F966A9D38E4,
-				F2BEE6E3EAE37286DE27400E,
+				9F425944AE86BD82115EE53D,
+				F81604D77D4ABFC827F0CB94,
+				C1EC4BE10542C91B73121A82,
+				314FC972BDB84D4AE7B78713,
+				D92EC83D05B1E5860125ACA8,
+				AB76714F814886BFE7274CCF,
 				5BDDE03B1A63189FEC1D23E2,
 				555F1845E5A44B1138F35A0E,
 				AAFD19E3CA53102615D3EC6E,
@@ -922,8 +942,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D1B3B7DD468E4EC5C2218D,
-				6A35AE488FE47B58AA418C3B,
+				385B7D4C2D44C96D5112212D,
+				25D46F5FAB49A9F1B344A6EC,
+				CA8C44D5DF325EC655F6FF48,
 				A6A810B5A18D28A0DA2FAC61,
 				4F19DC978A95CB17FEFDC0AA,
 				5B1DD39465A0DD48899CE87E,

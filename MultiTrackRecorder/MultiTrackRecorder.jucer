@@ -3,10 +3,17 @@
 <JUCERPROJECT id="zhXkGI" name="MultiTrackRecorder" projectType="guiapp" jucerVersion="5.4.1">
   <MAINGROUP id="nD8qqu" name="MultiTrackRecorder">
     <GROUP id="{67BEE17F-8371-8392-6F84-257798EEACB9}" name="Source">
-      <FILE id="BcpfpY" name="AudioRecord.cpp" compile="1" resource="0" file="Source/AudioRecord.cpp"/>
-      <FILE id="wxMf8Q" name="AudioRecord.h" compile="0" resource="0" file="Source/AudioRecord.h"/>
-      <FILE id="fgUCFg" name="Channel.cpp" compile="1" resource="0" file="Source/Channel.cpp"/>
-      <FILE id="NLiFg5" name="Channel.h" compile="0" resource="0" file="Source/Channel.h"/>
+      <FILE id="VO055J" name="AudioRecordingDemo.cpp" compile="1" resource="0"
+            file="Source/AudioRecordingDemo.cpp"/>
+      <FILE id="m7PHZ7" name="AudioRecordingDemo.h" compile="0" resource="0"
+            file="Source/AudioRecordingDemo.h"/>
+      <FILE id="AcxD34" name="RecordingThumbnail.cpp" compile="1" resource="0"
+            file="Source/RecordingThumbnail.cpp"/>
+      <FILE id="XdK0ZM" name="RecordingThumbnail.h" compile="0" resource="0"
+            file="Source/RecordingThumbnail.h"/>
+      <FILE id="UaNJPj" name="AudioRecorder.cpp" compile="1" resource="0"
+            file="Source/AudioRecorder.cpp"/>
+      <FILE id="oGYW10" name="AudioRecorder.h" compile="0" resource="0" file="Source/AudioRecorder.h"/>
       <FILE id="tThWEd" name="TracktionDemoUtilities.cpp" compile="1" resource="0"
             file="Source/TracktionDemoUtilities.cpp"/>
       <FILE id="U9oJUw" name="TracktionDemoUtilities.h" compile="0" resource="0"

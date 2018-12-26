@@ -1,13 +1,13 @@
 #pragma once
 
 #include "JuceHeader.h"
-
 #include "TracktionDemoUtilities.h"
-#include "Channel.h"
-#include "AudioRecord.h"
+#include "AudioRecordingDemo.h"
 
-class PlaybackDemo : public Component,
-                     private ChangeListener
+
+
+
+class PlaybackDemo : public Component, private ChangeListener
 {
 public:
 	PlaybackDemo();
@@ -15,10 +15,11 @@ public:
 
 	void paint(Graphics& g) override;
 	void resized() override;
-	void PlaybackDemo::addChannelButtonClicked();
-	void PlaybackDemo::removeChannelButtonClicked();
+	void addChannelButtonClicked();
+	void removeChannelButtonClicked();
+	void recordButtonClicked();
 	void removeTrack(te::AudioTrack & track);
-
+	
 
 private:
 
@@ -27,12 +28,7 @@ private:
 	void addNewClipFromFile(const File& editFile, int trackNum);
 	void initTransport();
 
-	
-
 	void removeAllClips(te::AudioTrack& track);
-
-
-	
 
 	void adjustClipProperties(tracktion_engine::WaveAudioClip& clip) const;
 	void updatePlayButtonText();
@@ -43,18 +39,23 @@ private:
 	AudioTransportSource transport;
 
 	te::Engine engine{ProjectInfo::projectName};
+	
 	std::unique_ptr<te::Edit> edit;
-
 	
 	TextButton settingsButton{ "Settings" }, playPauseButton{ "Play" }, recordButton{ "Record" }, addChannelButton{ "+" }, removeChannelButton{ "-" };
 	
-
 	int trackNum = 0;
 
 	std::unique_ptr<FileChooser> fc;
 
-	
+	LiveScrollingAudioDisplay liveAudioScroller;
+	RecordingThumbnail recordingThumbnail;
+	AudioRecorder recorder{ recordingThumbnail.getAudioThumbnail() };
+	Label explanationLabel{ {}, "This page demonstrates how to record a wave file from the live audio input..\n\n"
+								  "Pressing record will start recording a file in your \"Documents\" folder." };
 
+	File lastRecording;
+	AudioDeviceManager audioDeviceManager;
 
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(PlaybackDemo)
 };

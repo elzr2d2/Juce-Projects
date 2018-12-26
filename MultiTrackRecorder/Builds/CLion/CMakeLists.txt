@@ -16,10 +16,12 @@ if (APPLE)
 project ("MultiTrackRecorder" C CXX)
 
 add_executable (APP
-    "../../Source/AudioRecord.cpp"
-    "../../Source/AudioRecord.h"
-    "../../Source/Channel.cpp"
-    "../../Source/Channel.h"
+    "../../Source/AudioRecordingDemo.cpp"
+    "../../Source/AudioRecordingDemo.h"
+    "../../Source/RecordingThumbnail.cpp"
+    "../../Source/RecordingThumbnail.h"
+    "../../Source/AudioRecorder.cpp"
+    "../../Source/AudioRecorder.h"
     "../../Source/TracktionDemoUtilities.cpp"
     "../../Source/TracktionDemoUtilities.h"
     "../../Source/TracktionDemo.cpp"
@@ -1825,8 +1827,9 @@ add_executable (APP
     "../../JuceLibraryCode/JuceHeader.h"
 )
 
-set_source_files_properties ("../../Source/AudioRecord.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../Source/Channel.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/AudioRecordingDemo.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/RecordingThumbnail.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/AudioRecorder.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/TracktionDemoUtilities.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/TracktionDemo.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/MainComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)

@@ -37,13 +37,14 @@ PlaybackDemo::PlaybackDemo()
 	settingsButton.onClick = [this] { EngineHelpers::showAudioDeviceSettings(engine); };
 	addChannelButton.onClick = [this] { PlaybackDemo::addChannelButtonClicked(); };
 	removeChannelButton.onClick = [this] { PlaybackDemo::removeChannelButtonClicked(); };
-
+	recordButton.onClick = [this] { PlaybackDemo::recordButtonClicked(); };
 
 	updatePlayButtonText();
 									
 	
 											/*Buttons visibility*/
 	addAndMakeVisible(playPauseButton);
+	addAndMakeVisible(recordButton);
 	
 	addAndMakeVisible(settingsButton);
 	
@@ -51,6 +52,12 @@ PlaybackDemo::PlaybackDemo()
 	
 	addAndMakeVisible(removeChannelButton);
 	removeChannelButton.setEnabled(false);
+
+
+	addAndMakeVisible(recordingThumbnail);
+
+	audioDeviceManager.addAudioCallback(&liveAudioScroller);
+	audioDeviceManager.addAudioCallback(&recorder);
 
 
 	setSize(600, 400);
@@ -110,6 +117,8 @@ void PlaybackDemo::removeChannelButtonClicked()
 }
 
 
+
+
 void PlaybackDemo::paint(Graphics& g)
 {
 	g.fillAll(getLookAndFeel().findColour(ResizableWindow::backgroundColourId));
@@ -122,10 +131,12 @@ void PlaybackDemo::resized()
 	auto r = getLocalBounds();
 	auto topR = r.removeFromTop(30);
 
-	settingsButton.setBounds(topR.removeFromLeft(topR.getWidth() / 2).reduced(2));
-	playPauseButton.setBounds(topR.reduced(2));
-	addChannelButton.setBounds(0,playPauseButton.getBottom(),50,50);
-	removeChannelButton.setBounds(addChannelButton.getWidth()+5, playPauseButton.getBottom(), 50, 50);
+	settingsButton.setBounds(0,0,100,30);
+	playPauseButton.setBounds(100, 0, 100,30);
+	recordButton.setBounds(200, 0, 100, 30);
+	addChannelButton.setBounds(0,playPauseButton.getBottom(),70,30);
+	removeChannelButton.setBounds(addChannelButton.getWidth(), playPauseButton.getBottom(), 70, 30);
+	
 }
 
 void PlaybackDemo::removeAllClips(AudioTrack& track)
