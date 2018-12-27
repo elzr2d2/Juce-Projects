@@ -17,20 +17,23 @@ class RecordingThumbnail  : public Component,
                             private ChangeListener
 {
 public:
-	RecordingThumbnail();
-	~RecordingThumbnail();
+	RecordingThumbnail::RecordingThumbnail();
+	RecordingThumbnail::~RecordingThumbnail();
 
-	AudioThumbnail& getAudioThumbnail();
 
-	void setDisplayFullThumbnail(bool displayFull);
-	void paint(Graphics& g) override;
+	void RecordingThumbnail::setDisplayFullThumbnail(bool displayFull);
+	void RecordingThumbnail::paint(Graphics& g) override;
+
+	AudioThumbnail& RecordingThumbnail::getAudioThumbnail();
 
 private:
-	void changeListenerCallback(ChangeBroadcaster* source) override;
+	void RecordingThumbnail::changeListenerCallback(ChangeBroadcaster* source) override;
+
 
     AudioFormatManager formatManager;
     AudioThumbnailCache thumbnailCache  { 10 };
     AudioThumbnail thumbnail            { 512, formatManager, thumbnailCache };
+
 
     bool displayFullThumb = false;
  

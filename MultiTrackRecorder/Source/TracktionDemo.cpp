@@ -1,5 +1,6 @@
 #include "TracktionDemo.h"
 
+
 using namespace tracktion_engine;
 
 
@@ -115,9 +116,6 @@ void PlaybackDemo::removeChannelButtonClicked()
 		}
 	}
 }
-
-
-
 
 void PlaybackDemo::paint(Graphics& g)
 {

@@ -30,7 +30,7 @@ public:
 private:
 	LiveScrollingAudioDisplay liveAudioScroller;
     RecordingThumbnail recordingThumbnail;
-    AudioRecorder recorder  { recordingThumbnail.getAudioThumbnail() };
+    AudioRecorder recorder  {recordingThumbnail.getAudioThumbnail() };
 
     Label explanationLabel  { {}, "This page demonstrates how to record a wave file from the live audio input..\n\n"
                                   "Pressing record will start recording a file in your \"Documents\" folder."};

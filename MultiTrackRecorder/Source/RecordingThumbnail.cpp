@@ -10,26 +10,24 @@
 
 #include "RecordingThumbnail.h"
 
-RecordingThumbnail()
+RecordingThumbnail::RecordingThumbnail()
 {
 	formatManager.registerBasicFormats();
 	thumbnail.addChangeListener(this);
 }
 
-~RecordingThumbnail()
+RecordingThumbnail::~RecordingThumbnail()
 {
 	thumbnail.removeChangeListener(this);
 }
 
-AudioThumbnail& getAudioThumbnail() { return thumbnail; }
-
-void setDisplayFullThumbnail(bool displayFull)
+void RecordingThumbnail::setDisplayFullThumbnail(bool displayFull)
 {
 	displayFullThumb = displayFull;
 	repaint();
 }
 
-void paint(Graphics& g) override
+void RecordingThumbnail::paint(Graphics& g)
 {
 	g.fillAll(Colours::darkgrey);
 	g.setColour(Colours::lightgrey);
@@ -49,8 +47,13 @@ void paint(Graphics& g) override
 	}
 }
 
-void changeListenerCallback(ChangeBroadcaster* source)
+void RecordingThumbnail::changeListenerCallback(ChangeBroadcaster* source)
 {
 	if (source == &thumbnail)
 		repaint();
+}
+
+AudioThumbnail& RecordingThumbnail::getAudioThumbnail()
+{
+	return thumbnail;
 }

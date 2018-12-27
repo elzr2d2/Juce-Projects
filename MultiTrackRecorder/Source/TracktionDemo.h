@@ -24,6 +24,7 @@ public:
 private:
 
 	te::WaveAudioClip::Ptr loadAudioFileAsClip(const File& file, int trackNumber);
+	
 
 	void addNewClipFromFile(const File& editFile, int trackNum);
 	void initTransport();
@@ -48,13 +49,16 @@ private:
 
 	std::unique_ptr<FileChooser> fc;
 
+
 	LiveScrollingAudioDisplay liveAudioScroller;
 	RecordingThumbnail recordingThumbnail;
 	AudioRecorder recorder{ recordingThumbnail.getAudioThumbnail() };
+
 	Label explanationLabel{ {}, "This page demonstrates how to record a wave file from the live audio input..\n\n"
 								  "Pressing record will start recording a file in your \"Documents\" folder." };
 
-	File lastRecording;
+	AudioRecorder audioRecorder;
+	RecordingThumbnail recordingThumbnail;
 	AudioDeviceManager audioDeviceManager;
 
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(PlaybackDemo)
