@@ -2,8 +2,9 @@
 
 #include "JuceHeader.h"
 #include "TracktionDemoUtilities.h"
-#include "AudioRecordingDemo.h"
-
+#include "AudioRecorder.h"
+#include "RecordingThumbnail.h"
+#include "C:/CODE/tracktion_engine/modules/juce/examples/Assets/AudioLiveScrollingDisplay.h"
 
 
 
@@ -52,11 +53,12 @@ private:
 
 	LiveScrollingAudioDisplay liveAudioScroller;
 	RecordingThumbnail recordingThumbnail;
-	AudioRecorder recorder{ recordingThumbnail.getAudioThumbnail() };
+	
 
 	Label explanationLabel{ {}, "This page demonstrates how to record a wave file from the live audio input..\n\n"
 								  "Pressing record will start recording a file in your \"Documents\" folder." };
 
+	File lastRecording;
 	AudioRecorder audioRecorder;
 	RecordingThumbnail recordingThumbnail;
 	AudioDeviceManager audioDeviceManager;

@@ -3,25 +3,29 @@
 <JUCERPROJECT id="zhXkGI" name="MultiTrackRecorder" projectType="guiapp" jucerVersion="5.4.1">
   <MAINGROUP id="nD8qqu" name="MultiTrackRecorder">
     <GROUP id="{67BEE17F-8371-8392-6F84-257798EEACB9}" name="Source">
+      <FILE id="EFCuge" name="ChannelComponent.cpp" compile="1" resource="0"
+            file="Source/ChannelComponent.cpp"/>
+      <FILE id="qfSqLH" name="ChannelComponent.h" compile="1" resource="0"
+            file="Source/ChannelComponent.h"/>
       <FILE id="VO055J" name="AudioRecordingDemo.cpp" compile="1" resource="0"
             file="Source/AudioRecordingDemo.cpp"/>
-      <FILE id="m7PHZ7" name="AudioRecordingDemo.h" compile="0" resource="0"
+      <FILE id="m7PHZ7" name="AudioRecordingDemo.h" compile="1" resource="0"
             file="Source/AudioRecordingDemo.h"/>
       <FILE id="AcxD34" name="RecordingThumbnail.cpp" compile="1" resource="0"
             file="Source/RecordingThumbnail.cpp"/>
-      <FILE id="XdK0ZM" name="RecordingThumbnail.h" compile="0" resource="0"
+      <FILE id="XdK0ZM" name="RecordingThumbnail.h" compile="1" resource="0"
             file="Source/RecordingThumbnail.h"/>
       <FILE id="UaNJPj" name="AudioRecorder.cpp" compile="1" resource="0"
             file="Source/AudioRecorder.cpp"/>
-      <FILE id="oGYW10" name="AudioRecorder.h" compile="0" resource="0" file="Source/AudioRecorder.h"/>
+      <FILE id="oGYW10" name="AudioRecorder.h" compile="1" resource="0" file="Source/AudioRecorder.h"/>
       <FILE id="tThWEd" name="TracktionDemoUtilities.cpp" compile="1" resource="0"
             file="Source/TracktionDemoUtilities.cpp"/>
-      <FILE id="U9oJUw" name="TracktionDemoUtilities.h" compile="0" resource="0"
+      <FILE id="U9oJUw" name="TracktionDemoUtilities.h" compile="1" resource="0"
             file="Source/TracktionDemoUtilities.h"/>
       <FILE id="QRQ8NA" name="TracktionDemo.cpp" compile="1" resource="0"
             file="Source/TracktionDemo.cpp"/>
-      <FILE id="m09e7R" name="TracktionDemo.h" compile="0" resource="0" file="Source/TracktionDemo.h"/>
-      <FILE id="dRUhbQ" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="m09e7R" name="TracktionDemo.h" compile="1" resource="0" file="Source/TracktionDemo.h"/>
+      <FILE id="dRUhbQ" name="MainComponent.h" compile="1" resource="0" file="Source/MainComponent.h"/>
       <FILE id="MRONq4" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
       <FILE id="fD3Qu9" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
