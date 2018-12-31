@@ -138,10 +138,10 @@
     <Lib/>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\GridPanel.cpp"/>
+    <ClCompile Include="..\..\Source\TrackPanel.cpp"/>
+    <ClCompile Include="..\..\Source\ToolBar.cpp"/>
     <ClCompile Include="..\..\Source\ChannelComponent.cpp"/>
-    <ClCompile Include="..\..\Source\AudioRecordingDemo.cpp"/>
-    <ClCompile Include="..\..\Source\RecordingThumbnail.cpp"/>
-    <ClCompile Include="..\..\Source\AudioRecorder.cpp"/>
     <ClCompile Include="..\..\Source\TracktionDemoUtilities.cpp"/>
     <ClCompile Include="..\..\Source\TracktionDemo.cpp"/>
     <ClCompile Include="..\..\Source\MainComponent.cpp"/>
@@ -2490,10 +2490,10 @@
     <ClCompile Include="..\..\JuceLibraryCode\include_tracktion_engine_utils.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\GridPanel.h"/>
+    <ClInclude Include="..\..\Source\TrackPanel.h"/>
+    <ClInclude Include="..\..\Source\ToolBar.h"/>
     <ClInclude Include="..\..\Source\ChannelComponent.h"/>
-    <ClInclude Include="..\..\Source\AudioRecordingDemo.h"/>
-    <ClInclude Include="..\..\Source\RecordingThumbnail.h"/>
-    <ClInclude Include="..\..\Source\AudioRecorder.h"/>
     <ClInclude Include="..\..\Source\TracktionDemoUtilities.h"/>
     <ClInclude Include="..\..\Source\TracktionDemo.h"/>
     <ClInclude Include="..\..\Source\MainComponent.h"/>

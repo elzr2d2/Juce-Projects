@@ -1,41 +1,39 @@
 #pragma once
 
-#include "JuceHeader.h"
-#include "TracktionDemoUtilities.h"
+#include "../JuceHeader.h"
 
-
-
-class ChannelComponent : public Component, private ChangeListener, public Slider::Listener
+class ChannelComponent : public AudioAppComponent
 {
 public:
+
 	ChannelComponent();
 	~ChannelComponent();
 
-	void paint(Graphics& g) override;
-	void resized() override;
+	void prepareToPlay(int samplesPerBlockExpected, double sampleRate) override;
+	void getNextAudioBlock(const AudioSourceChannelInfo& bufferToFill) override;
+	void releaseResources() override;
 
 	void removeButtonClicked();
 	void soloButtonClicked();
 	void muteButtonClicked();
+	void fileButtonClicked();
 
-private:
-	/*
-		Volume
-		Pan
-		remove
-		Solo
-		Mute
+	File getFile();
+
+	void paint(Graphics& g) override;
+	void resized() override;
 	
-	*/
+private:
 
+	File file;
+	TextEditor name;
 	Slider vol_Slider;
 	Slider pan_Slider;
-
-	TextButton removeButton{ "-" }, soloButton{ "S" }, muteButton{"M"};
-
-	Rectangle <int>rec;
-
-	
+	TextButton soloButton{ "S" }, 
+			   muteButton{ "M" },
+			   removeButton{ "-" },
+			   fileButton{ "..." };
 
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(ChannelComponent)
 };
+

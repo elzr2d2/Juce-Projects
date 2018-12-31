@@ -16,14 +16,14 @@ if (APPLE)
 project ("MultiTrackRecorder" C CXX)
 
 add_executable (APP
+    "../../Source/GridPanel.cpp"
+    "../../Source/GridPanel.h"
+    "../../Source/TrackPanel.cpp"
+    "../../Source/TrackPanel.h"
+    "../../Source/ToolBar.cpp"
+    "../../Source/ToolBar.h"
     "../../Source/ChannelComponent.cpp"
     "../../Source/ChannelComponent.h"
-    "../../Source/AudioRecordingDemo.cpp"
-    "../../Source/AudioRecordingDemo.h"
-    "../../Source/RecordingThumbnail.cpp"
-    "../../Source/RecordingThumbnail.h"
-    "../../Source/AudioRecorder.cpp"
-    "../../Source/AudioRecorder.h"
     "../../Source/TracktionDemoUtilities.cpp"
     "../../Source/TracktionDemoUtilities.h"
     "../../Source/TracktionDemo.cpp"
@@ -1829,6 +1829,9 @@ add_executable (APP
     "../../JuceLibraryCode/JuceHeader.h"
 )
 
+set_source_files_properties ("../../Source/GridPanel.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/TrackPanel.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/ToolBar.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h" PROPERTIES HEADER_FILE_ONLY TRUE)
