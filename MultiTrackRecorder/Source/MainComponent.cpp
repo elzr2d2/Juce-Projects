@@ -3,6 +3,9 @@
 MainComponent::MainComponent()
 {
 	addAndMakeVisible(trackPanel);
+	addAndMakeVisible(bottomPanel);
+	addAndMakeVisible(timelinePanel);
+	addAndMakeVisible(toolBarPanel);
 
 
     setSize (800, 600);
@@ -37,18 +40,16 @@ void MainComponent::releaseResources()
 void MainComponent::paint (Graphics& g)
 {
     g.fillAll (getLookAndFeel().findColour (ResizableWindow::backgroundColourId));
-	Rectangle<int> toolbarErea(0, 0,getWidth(),80);
+	Rectangle<int> toolbarFrame(0, 0,getWidth(),80);
 	g.setColour(Colours::maroon);
-	g.fillRect(toolbarErea);
+	g.fillRect(toolbarFrame);
 }
 
 void MainComponent::resized()
 {
-	Grid grid;
-	using Track = Grid::TrackInfo;
-	grid.templateRows = { Track(1_fr),Track(2_fr),Track(3_fr) };
-	grid.templateColumns = { Track(1_fr), Track(2_fr)};
-	grid.items = { GridItem(trackPanel), GridItem(toolBarPanel), GridItem(timelinePanel),GridItem(bottomPanel) };
-	grid.performLayout(getLocalBounds());
+	toolBarPanel.setBounds(0,0,toolBarPanel.getWidth(),toolBarPanel.getHeight());
+	bottomPanel.setBounds(0, bottomPanel.getHeight(), bottomPanel.getWidth(), bottomPanel.getHeight());
+	trackPanel.setBounds(0,toolBarPanel.getBottom(), trackPanel.getWidth(), trackPanel.getHeight());
+	timelinePanel.setBounds(trackPanel.getRight(),toolBarPanel.getBottom(),timelinePanel.getWidth(),timelinePanel.getHeight());
 	
 }
