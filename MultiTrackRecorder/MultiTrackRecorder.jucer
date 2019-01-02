@@ -3,12 +3,16 @@
 <JUCERPROJECT id="zhXkGI" name="MultiTrackRecorder" projectType="guiapp" jucerVersion="5.4.1">
   <MAINGROUP id="nD8qqu" name="MultiTrackRecorder">
     <GROUP id="{67BEE17F-8371-8392-6F84-257798EEACB9}" name="Source">
-      <FILE id="RWHApL" name="GridPanel.cpp" compile="1" resource="0" file="Source/GridPanel.cpp"/>
-      <FILE id="ojsecB" name="GridPanel.h" compile="0" resource="0" file="Source/GridPanel.h"/>
+      <FILE id="lzfGgH" name="BottomPanel.cpp" compile="1" resource="0" file="Source/BottomPanel.cpp"/>
+      <FILE id="qaPcuM" name="BottomPanel.h" compile="1" resource="0" file="Source/BottomPanel.h"/>
+      <FILE id="RWHApL" name="TimelinePanel.cpp" compile="1" resource="0"
+            file="Source/TimelinePanel.cpp"/>
+      <FILE id="ojsecB" name="TimelinePanel.h" compile="1" resource="0" file="Source/TimelinePanel.h"/>
       <FILE id="VfKFMz" name="TrackPanel.cpp" compile="1" resource="0" file="Source/TrackPanel.cpp"/>
-      <FILE id="NqQuUh" name="TrackPanel.h" compile="0" resource="0" file="Source/TrackPanel.h"/>
-      <FILE id="moJsqS" name="ToolBar.cpp" compile="1" resource="0" file="Source/ToolBar.cpp"/>
-      <FILE id="F7r5KO" name="ToolBar.h" compile="0" resource="0" file="Source/ToolBar.h"/>
+      <FILE id="NqQuUh" name="TrackPanel.h" compile="1" resource="0" file="Source/TrackPanel.h"/>
+      <FILE id="moJsqS" name="ToolBarPanel.cpp" compile="1" resource="0"
+            file="Source/ToolBarPanel.cpp"/>
+      <FILE id="F7r5KO" name="ToolBarPanel.h" compile="1" resource="0" file="Source/ToolBarPanel.h"/>
       <FILE id="EFCuge" name="ChannelComponent.cpp" compile="1" resource="0"
             file="Source/ChannelComponent.cpp"/>
       <FILE id="qfSqLH" name="ChannelComponent.h" compile="1" resource="0"
@@ -17,9 +21,9 @@
             file="Source/TracktionDemoUtilities.cpp"/>
       <FILE id="U9oJUw" name="TracktionDemoUtilities.h" compile="1" resource="0"
             file="Source/TracktionDemoUtilities.h"/>
-      <FILE id="QRQ8NA" name="TracktionDemo.cpp" compile="1" resource="0"
+      <FILE id="QRQ8NA" name="TracktionDemo.cpp" compile="0" resource="0"
             file="Source/TracktionDemo.cpp"/>
-      <FILE id="m09e7R" name="TracktionDemo.h" compile="1" resource="0" file="Source/TracktionDemo.h"/>
+      <FILE id="m09e7R" name="TracktionDemo.h" compile="0" resource="0" file="Source/TracktionDemo.h"/>
       <FILE id="dRUhbQ" name="MainComponent.h" compile="1" resource="0" file="Source/MainComponent.h"/>
       <FILE id="MRONq4" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>

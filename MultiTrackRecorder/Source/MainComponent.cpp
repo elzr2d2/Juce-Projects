@@ -2,11 +2,8 @@
 
 MainComponent::MainComponent()
 {
-	addAndMakeVisible(channelOne);
-	addAndMakeVisible(channelTwo);
-	addAndMakeVisible(playPauseButton);
-	addAndMakeVisible(stopButton);
-	addAndMakeVisible(loopButton);
+	addAndMakeVisible(trackPanel);
+
 
     setSize (800, 600);
     setAudioChannels (2, 2);
@@ -47,11 +44,11 @@ void MainComponent::paint (Graphics& g)
 
 void MainComponent::resized()
 {
-	int border = 5;
-	int button = 50;
-	playPauseButton.setBounds(0, 0, button, button);
-	stopButton.setBounds(button+10, 0, button, button);
-	loopButton.setBounds(button*2+10*2, 0, button, button);
-	channelOne.setBounds(0, 100, channelOne.getWidth(), channelOne.getHeight());
-	channelTwo.setBounds(0, 100 * 2 + border, channelOne.getWidth(), channelOne.getHeight());
+	Grid grid;
+	using Track = Grid::TrackInfo;
+	grid.templateRows = { Track(1_fr),Track(2_fr),Track(3_fr) };
+	grid.templateColumns = { Track(1_fr), Track(2_fr)};
+	grid.items = { GridItem(trackPanel), GridItem(toolBarPanel), GridItem(timelinePanel),GridItem(bottomPanel) };
+	grid.performLayout(getLocalBounds());
+	
 }

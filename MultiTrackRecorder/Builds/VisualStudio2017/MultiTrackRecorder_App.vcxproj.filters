@@ -511,13 +511,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\GridPanel.cpp">
+    <ClCompile Include="..\..\Source\BottomPanel.cpp">
+      <Filter>MultiTrackRecorder\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TimelinePanel.cpp">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TrackPanel.cpp">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ToolBar.cpp">
+    <ClCompile Include="..\..\Source\ToolBarPanel.cpp">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ChannelComponent.cpp">
@@ -3036,13 +3039,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\GridPanel.h">
+    <ClInclude Include="..\..\Source\BottomPanel.h">
+      <Filter>MultiTrackRecorder\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TimelinePanel.h">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TrackPanel.h">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\ToolBar.h">
+    <ClInclude Include="..\..\Source\ToolBarPanel.h">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ChannelComponent.h">

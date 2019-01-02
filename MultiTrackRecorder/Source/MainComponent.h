@@ -1,7 +1,10 @@
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
-#include "ChannelComponent.h"
+#include "TrackPanel.h"
+#include "ToolBarPanel.h"
+#include "TimelinePanel.h"
+#include "BottomPanel.h"
 class MainComponent   : public AudioAppComponent 
 {
 public:
@@ -19,12 +22,11 @@ public:
     void resized() override;
 
 private:
-	ChannelComponent channelOne,
-					 channelTwo;
+	TrackPanel trackPanel;
+	ToolBarPanel toolBarPanel;
+	TimelinePanel timelinePanel;
+	BottomPanel bottomPanel;
 
-	TextButton playPauseButton	{ "PLAY" },
-			   stopButton		{ "STOP" },
-			   loopButton		{ "LOOP" };
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

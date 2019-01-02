@@ -57,17 +57,37 @@
 			isa = PBXBuildFile;
 			fileRef = 15CFED6B57793F43AEA874D6;
 		};
-		E5BE46FB8C666500EE940E26 = {
+		09A7C8A55D0A5466E82FE021 = {
 			isa = PBXBuildFile;
-			fileRef = 59CAAFADA033270256A77AAB;
+			fileRef = B097776F9B0F138C552E8EAB;
+		};
+		F7446CFA187F74D8B5755269 = {
+			isa = PBXBuildFile;
+			fileRef = FBAC7F0403137077ECC94189;
+		};
+		DC8A6439B2B4E85550D86AAB = {
+			isa = PBXBuildFile;
+			fileRef = EDF3400E57B73E6C8F255782;
+		};
+		F6FE9F7B3961D3508FE880C0 = {
+			isa = PBXBuildFile;
+			fileRef = 5B6CB60E61B0B89B45E20A80;
 		};
 		3FCFDF2F1E86AFC465B381C7 = {
 			isa = PBXBuildFile;
 			fileRef = E77F2264C95349DB099038B5;
 		};
-		AF9CBB3ED95740FA91BE0CE9 = {
+		4F998DF0280464995C9D74D7 = {
 			isa = PBXBuildFile;
-			fileRef = 630174E981F526A98DDA4C8B;
+			fileRef = A517CDFD30A6D858FEC79B92;
+		};
+		4B7D3A64F9495547F69B4D0C = {
+			isa = PBXBuildFile;
+			fileRef = 06D1968CC50861059483BFF2;
+		};
+		EED58F76EEC30722F86D807F = {
+			isa = PBXBuildFile;
+			fileRef = C5363C9C437821692046C1D4;
 		};
 		8DCAA7175FE232D433F58CEF = {
 			isa = PBXBuildFile;
@@ -84,14 +104,6 @@
 		2750C5B4C3BF44EFFD02C964 = {
 			isa = PBXBuildFile;
 			fileRef = 555F1845E5A44B1138F35A0E;
-		};
-		4F19DC978A95CB17FEFDC0AA = {
-			isa = PBXBuildFile;
-			fileRef = AAFD19E3CA53102615D3EC6E;
-		};
-		E30D5537FAF3517117094ECE = {
-			isa = PBXBuildFile;
-			fileRef = 57CD1C6B33935EEB08FC28ED;
 		};
 		C97252D1A140AD01B2D3DDE1 = {
 			isa = PBXBuildFile;
@@ -206,18 +218,18 @@
 			path = "../../JuceLibraryCode/include_juce_gui_extra.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		06D1968CC50861059483BFF2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = ToolBarPanel.cpp;
+			path = ../../Source/ToolBarPanel.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		09657C5A49490EC235B2F24D = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
 			name = "include_juce_dsp.mm";
 			path = "../../JuceLibraryCode/include_juce_dsp.mm";
-			sourceTree = "SOURCE_ROOT";
-		};
-		0989CC866CCADD6DEDA4A9E2 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = ToolBar.h;
-			path = ../../Source/ToolBar.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		0A7F52656F5A557F0423EC4A = {
@@ -360,13 +372,6 @@
 			path = ../../Source/ChannelComponent.h;
 			sourceTree = "SOURCE_ROOT";
 		};
-		476CFFF17089E503E865DD26 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = GridPanel.h;
-			path = ../../Source/GridPanel.h;
-			sourceTree = "SOURCE_ROOT";
-		};
 		4E6ED5A98B0B0F9FBB2D581D = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
@@ -395,11 +400,11 @@
 			path = ../../Source/ChannelComponent.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
-		59CAAFADA033270256A77AAB = {
+		5B6CB60E61B0B89B45E20A80 = {
 			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.cpp;
-			name = GridPanel.cpp;
-			path = ../../Source/GridPanel.cpp;
+			lastKnownFileType = sourcecode.c.h;
+			name = TimelinePanel.h;
+			path = ../../Source/TimelinePanel.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		5BDDE03B1A63189FEC1D23E2 = {
@@ -414,13 +419,6 @@
 			lastKnownFileType = sourcecode.c.h;
 			name = AppConfig.h;
 			path = ../../JuceLibraryCode/AppConfig.h;
-			sourceTree = "SOURCE_ROOT";
-		};
-		630174E981F526A98DDA4C8B = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.cpp;
-			name = ToolBar.cpp;
-			path = ../../Source/ToolBar.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
 		6670AFA809EFB4B188EB4F80 = {
@@ -549,6 +547,13 @@
 			path = ../../Source/TracktionDemo.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
+		B097776F9B0F138C552E8EAB = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = BottomPanel.cpp;
+			path = ../../Source/BottomPanel.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		B30B47277F59371E915C298F = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -598,6 +603,13 @@
 			path = "../../JuceLibraryCode/modules/juce_audio_basics";
 			sourceTree = "SOURCE_ROOT";
 		};
+		C5363C9C437821692046C1D4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = ToolBarPanel.h;
+			path = ../../Source/ToolBarPanel.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		CC278184B7918A12477C0BB0 = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -633,6 +645,13 @@
 			path = ../../Source/TrackPanel.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
+		EDF3400E57B73E6C8F255782 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = TimelinePanel.cpp;
+			path = ../../Source/TimelinePanel.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		FA8EBADE7AD333C31E7DF7B1 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -640,15 +659,24 @@
 			path = "../../JuceLibraryCode/include_juce_opengl.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		FBAC7F0403137077ECC94189 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = BottomPanel.h;
+			path = ../../Source/BottomPanel.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		11E2735FF160C8F0DCD62A31 = {
 			isa = PBXGroup;
 			children = (
-				59CAAFADA033270256A77AAB,
-				476CFFF17089E503E865DD26,
+				B097776F9B0F138C552E8EAB,
+				FBAC7F0403137077ECC94189,
+				EDF3400E57B73E6C8F255782,
+				5B6CB60E61B0B89B45E20A80,
 				E77F2264C95349DB099038B5,
 				A517CDFD30A6D858FEC79B92,
-				630174E981F526A98DDA4C8B,
-				0989CC866CCADD6DEDA4A9E2,
+				06D1968CC50861059483BFF2,
+				C5363C9C437821692046C1D4,
 				58CF47160EEE5410B679D011,
 				449B6591E175618576B7EE9E,
 				5BDDE03B1A63189FEC1D23E2,
@@ -978,15 +1006,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5BE46FB8C666500EE940E26,
+				09A7C8A55D0A5466E82FE021,
+				F7446CFA187F74D8B5755269,
+				DC8A6439B2B4E85550D86AAB,
+				F6FE9F7B3961D3508FE880C0,
 				3FCFDF2F1E86AFC465B381C7,
-				AF9CBB3ED95740FA91BE0CE9,
+				4F998DF0280464995C9D74D7,
+				4B7D3A64F9495547F69B4D0C,
+				EED58F76EEC30722F86D807F,
 				8DCAA7175FE232D433F58CEF,
 				F81ABABA46650260AA42244B,
 				A6A810B5A18D28A0DA2FAC61,
 				2750C5B4C3BF44EFFD02C964,
-				4F19DC978A95CB17FEFDC0AA,
-				E30D5537FAF3517117094ECE,
 				C97252D1A140AD01B2D3DDE1,
 				5B1DD39465A0DD48899CE87E,
 				BE1ADE846E2E7FCBED84B387,
