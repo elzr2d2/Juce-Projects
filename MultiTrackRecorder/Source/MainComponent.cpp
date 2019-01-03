@@ -1,55 +1,84 @@
+/*
+  ==============================================================================
+
+	This file was auto-generated!
+
+  ==============================================================================
+*/
+
 #include "MainComponent.h"
 
+//==============================================================================
 MainComponent::MainComponent()
 {
-	addAndMakeVisible(trackPanel);
-	addAndMakeVisible(bottomPanel);
-	addAndMakeVisible(timelinePanel);
-	addAndMakeVisible(toolBarPanel);
+	setSize(800, 600);
 
+	// Some platforms require permissions to open input channels so request that here
+	if (RuntimePermissions::isRequired(RuntimePermissions::recordAudio)
+		&& !RuntimePermissions::isGranted(RuntimePermissions::recordAudio))
+	{
+		RuntimePermissions::request(RuntimePermissions::recordAudio,
+			[&](bool granted) { if (granted)  setAudioChannels(2, 2); });
+	}
+	else
+	{
+		// Specify the number of input and output channels that we want to open
+		setAudioChannels(2, 2);
+	}
 
-    setSize (800, 600);
-    setAudioChannels (2, 2);
+	addAndMakeVisible(demo);
 }
 
 MainComponent::~MainComponent()
 {
-
-    shutdownAudio();
+	// This shuts down the audio device and clears the audio source.
+	shutdownAudio();
 }
 
-
-void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRate)
+//==============================================================================
+void MainComponent::prepareToPlay(int samplesPerBlockExpected, double sampleRate)
 {
+	// This function will be called when the audio device is started, or when
+	// its settings (i.e. sample rate, block size, etc) are changed.
 
+	// You can use this function to initialise any resources you might need,
+	// but be careful - it will be called on the audio thread, not the GUI thread.
 
+	// For more details, see the help for AudioProcessor::prepareToPlay()
 }
 
-void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFill)
+void MainComponent::getNextAudioBlock(const AudioSourceChannelInfo& bufferToFill)
 {
+	// Your audio-processing code goes here!
 
-    bufferToFill.clearActiveBufferRegion();
+	// For more details, see the help for AudioProcessor::getNextAudioBlock()
+
+	// Right now we are not producing any data, in which case we need to clear the buffer
+	// (to prevent the output of random noise)
+	bufferToFill.clearActiveBufferRegion();
 }
 
 void MainComponent::releaseResources()
 {
+	// This will be called when the audio device stops, or when it is being
+	// restarted due to a setting change.
 
+	// For more details, see the help for AudioProcessor::releaseResources()
 }
 
-
-void MainComponent::paint (Graphics& g)
+//==============================================================================
+void MainComponent::paint(Graphics& g)
 {
-    g.fillAll (getLookAndFeel().findColour (ResizableWindow::backgroundColourId));
-	Rectangle<int> toolbarFrame(0, 0,getWidth(),80);
-	g.setColour(Colours::maroon);
-	g.fillRect(toolbarFrame);
+	// (Our component is opaque, so we must completely fill the background with a solid colour)
+	g.fillAll(getLookAndFeel().findColour(ResizableWindow::backgroundColourId));
+
+	// You can add your drawing code here!
 }
 
 void MainComponent::resized()
 {
-	toolBarPanel.setBounds(0,0,toolBarPanel.getWidth(),toolBarPanel.getHeight());
-	bottomPanel.setBounds(0, bottomPanel.getHeight(), bottomPanel.getWidth(), bottomPanel.getHeight());
-	trackPanel.setBounds(0,toolBarPanel.getBottom(), trackPanel.getWidth(), trackPanel.getHeight());
-	timelinePanel.setBounds(trackPanel.getRight(),toolBarPanel.getBottom(),timelinePanel.getWidth(),timelinePanel.getHeight());
-	
+	demo.setBounds(getLocalBounds());
+	// This is called when the MainContentComponent is resized.
+	// If you add any child components, this is where you should
+	// update their positions.
 }

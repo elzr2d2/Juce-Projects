@@ -511,31 +511,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\BottomPanel.cpp">
+    <ClCompile Include="..\..\Source\AudioRecorder.cpp">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\TimelinePanel.cpp">
-      <Filter>MultiTrackRecorder\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\TrackPanel.cpp">
-      <Filter>MultiTrackRecorder\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ToolBarPanel.cpp">
+    <ClCompile Include="..\..\Source\AudioRecordingDemo.cpp">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ChannelComponent.cpp">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\TracktionDemoUtilities.cpp">
-      <Filter>MultiTrackRecorder\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\TracktionDemo.cpp">
+    <ClCompile Include="..\..\Source\Main.cpp">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\MainComponent.cpp">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Main.cpp">
+    <ClCompile Include="..\..\Source\RecordingThumbnail.cpp">
+      <Filter>MultiTrackRecorder\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TracktionDemo.cpp">
+      <Filter>MultiTrackRecorder\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TracktionDemoUtilities.cpp">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioChannelSet.cpp">
@@ -3039,28 +3036,25 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\BottomPanel.h">
+    <ClInclude Include="..\..\Source\AudioRecorder.h">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\TimelinePanel.h">
-      <Filter>MultiTrackRecorder\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\TrackPanel.h">
-      <Filter>MultiTrackRecorder\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\ToolBarPanel.h">
+    <ClInclude Include="..\..\Source\AudioRecordingDemo.h">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ChannelComponent.h">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\TracktionDemoUtilities.h">
+    <ClInclude Include="..\..\Source\MainComponent.h">
+      <Filter>MultiTrackRecorder\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RecordingThumbnail.h">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TracktionDemo.h">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\MainComponent.h">
+    <ClInclude Include="..\..\Source\TracktionDemoUtilities.h">
       <Filter>MultiTrackRecorder\Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\audio_play_head\juce_AudioPlayHead.h">

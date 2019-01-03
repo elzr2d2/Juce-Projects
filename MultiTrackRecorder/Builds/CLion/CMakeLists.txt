@@ -16,23 +16,21 @@ if (APPLE)
 project ("MultiTrackRecorder" C CXX)
 
 add_executable (APP
-    "../../Source/BottomPanel.cpp"
-    "../../Source/BottomPanel.h"
-    "../../Source/TimelinePanel.cpp"
-    "../../Source/TimelinePanel.h"
-    "../../Source/TrackPanel.cpp"
-    "../../Source/TrackPanel.h"
-    "../../Source/ToolBarPanel.cpp"
-    "../../Source/ToolBarPanel.h"
+    "../../Source/AudioRecorder.cpp"
+    "../../Source/AudioRecorder.h"
+    "../../Source/AudioRecordingDemo.cpp"
+    "../../Source/AudioRecordingDemo.h"
     "../../Source/ChannelComponent.cpp"
     "../../Source/ChannelComponent.h"
-    "../../Source/TracktionDemoUtilities.cpp"
-    "../../Source/TracktionDemoUtilities.h"
+    "../../Source/Main.cpp"
+    "../../Source/MainComponent.cpp"
+    "../../Source/MainComponent.h"
+    "../../Source/RecordingThumbnail.cpp"
+    "../../Source/RecordingThumbnail.h"
     "../../Source/TracktionDemo.cpp"
     "../../Source/TracktionDemo.h"
-    "../../Source/MainComponent.h"
-    "../../Source/MainComponent.cpp"
-    "../../Source/Main.cpp"
+    "../../Source/TracktionDemoUtilities.cpp"
+    "../../Source/TracktionDemoUtilities.h"
     "../../JuceLibraryCode/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h"
     "../../JuceLibraryCode/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp"
     "../../JuceLibraryCode/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h"
@@ -1831,8 +1829,13 @@ add_executable (APP
     "../../JuceLibraryCode/JuceHeader.h"
 )
 
-set_source_files_properties ("../../Source/TracktionDemo.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/AudioRecorder.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/AudioRecordingDemo.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/ChannelComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/MainComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/RecordingThumbnail.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/TracktionDemo.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../Source/TracktionDemoUtilities.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../JuceLibraryCode/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -3655,13 +3658,13 @@ set_target_properties (APP PROPERTIES
     XCODE_ATTRIBUTE_COPY_PHASE_STRIP NO
     XCODE_ATTRIBUTE_GCC_DYNAMIC_NO_PIC NO
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
-    XCODE_ATTRIBUTE_INFOPLIST_FILE "H:\Juce-spacework\Juce-Projects\MultiTrackRecorder\Builds\CLion\Debug-Info-App.plist"
+    XCODE_ATTRIBUTE_INFOPLIST_FILE "H:\Juce-spacework\Main Project\Juce-Projects\MultiTrackRecorder\Builds\CLion\Debug-Info-App.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Applications"
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.MultiTrackRecorder
     XCODE_ATTRIBUTE_PRODUCT_NAME "MultiTrackRecorder"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
-    MACOSX_BUNDLE_INFO_PLIST "H:\Juce-spacework\Juce-Projects\MultiTrackRecorder\Builds\CLion\Debug-Info-App.plist"
+    MACOSX_BUNDLE_INFO_PLIST "H:\Juce-spacework\Main Project\Juce-Projects\MultiTrackRecorder\Builds\CLion\Debug-Info-App.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "MultiTrackRecorder"
     MACOSX_BUNDLE TRUE
 )
@@ -3732,13 +3735,13 @@ set_target_properties (APP PROPERTIES
     XCODE_ATTRIBUTE_GCC_GENERATE_DEBUGGING_SYMBOLS NO
     XCODE_ATTRIBUTE_GCC_SYMBOLS_PRIVATE_EXTERN YES
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
-    XCODE_ATTRIBUTE_INFOPLIST_FILE "H:\Juce-spacework\Juce-Projects\MultiTrackRecorder\Builds\CLion\Release-Info-App.plist"
+    XCODE_ATTRIBUTE_INFOPLIST_FILE "H:\Juce-spacework\Main Project\Juce-Projects\MultiTrackRecorder\Builds\CLion\Release-Info-App.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Applications"
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.MultiTrackRecorder
     XCODE_ATTRIBUTE_PRODUCT_NAME "MultiTrackRecorder"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
-    MACOSX_BUNDLE_INFO_PLIST "H:\Juce-spacework\Juce-Projects\MultiTrackRecorder\Builds\CLion\Release-Info-App.plist"
+    MACOSX_BUNDLE_INFO_PLIST "H:\Juce-spacework\Main Project\Juce-Projects\MultiTrackRecorder\Builds\CLion\Release-Info-App.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "MultiTrackRecorder"
     MACOSX_BUNDLE TRUE
 )

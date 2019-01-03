@@ -138,17 +138,14 @@
     <Lib/>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\BottomPanel.cpp"/>
-    <ClCompile Include="..\..\Source\TimelinePanel.cpp"/>
-    <ClCompile Include="..\..\Source\TrackPanel.cpp"/>
-    <ClCompile Include="..\..\Source\ToolBarPanel.cpp"/>
+    <ClCompile Include="..\..\Source\AudioRecorder.cpp"/>
+    <ClCompile Include="..\..\Source\AudioRecordingDemo.cpp"/>
     <ClCompile Include="..\..\Source\ChannelComponent.cpp"/>
-    <ClCompile Include="..\..\Source\TracktionDemoUtilities.cpp"/>
-    <ClCompile Include="..\..\Source\TracktionDemo.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\MainComponent.cpp"/>
     <ClCompile Include="..\..\Source\Main.cpp"/>
+    <ClCompile Include="..\..\Source\MainComponent.cpp"/>
+    <ClCompile Include="..\..\Source\RecordingThumbnail.cpp"/>
+    <ClCompile Include="..\..\Source\TracktionDemo.cpp"/>
+    <ClCompile Include="..\..\Source\TracktionDemoUtilities.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioChannelSet.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
@@ -2493,14 +2490,13 @@
     <ClCompile Include="..\..\JuceLibraryCode\include_tracktion_engine_utils.cpp"/>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\BottomPanel.h"/>
-    <ClInclude Include="..\..\Source\TimelinePanel.h"/>
-    <ClInclude Include="..\..\Source\TrackPanel.h"/>
-    <ClInclude Include="..\..\Source\ToolBarPanel.h"/>
+    <ClInclude Include="..\..\Source\AudioRecorder.h"/>
+    <ClInclude Include="..\..\Source\AudioRecordingDemo.h"/>
     <ClInclude Include="..\..\Source\ChannelComponent.h"/>
-    <ClInclude Include="..\..\Source\TracktionDemoUtilities.h"/>
-    <ClInclude Include="..\..\Source\TracktionDemo.h"/>
     <ClInclude Include="..\..\Source\MainComponent.h"/>
+    <ClInclude Include="..\..\Source\RecordingThumbnail.h"/>
+    <ClInclude Include="..\..\Source\TracktionDemo.h"/>
+    <ClInclude Include="..\..\Source\TracktionDemoUtilities.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\audio_play_head\juce_AudioPlayHead.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioChannelSet.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioDataConverters.h"/>
