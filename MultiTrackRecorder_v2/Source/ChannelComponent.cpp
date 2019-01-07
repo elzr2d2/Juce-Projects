@@ -64,6 +64,7 @@ void ChannelComponent::removeButtonClicked()
 
 void ChannelComponent::soloButtonClicked()
 {
+	
 }
 
 void ChannelComponent::muteButtonClicked()
@@ -78,8 +79,9 @@ void ChannelComponent::fileButtonClicked()
 	{
 		file = fileChooser.getResult();
 		name.setText(file.getFileName());
-
+		je.addChannel(file);
 	}
+
 }
 
 File ChannelComponent::getFile()

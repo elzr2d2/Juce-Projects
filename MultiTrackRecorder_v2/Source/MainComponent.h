@@ -10,6 +10,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "PlaybackDemo.h"
+#include "ChannelComponent.h"
 
 //==============================================================================
 /*
@@ -36,5 +37,6 @@ private:
     //==============================================================================
 	PlaybackDemo demo;
 
+	
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

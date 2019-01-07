@@ -1,8 +1,8 @@
 #pragma once
 
 #include "../JuceHeader.h"
-
-class ChannelComponent : public AudioAppComponent
+#include "JOELEngine.h"
+class ChannelComponent : public AudioAppComponent , private ChangeListener
 {
 public:
 
@@ -17,7 +17,7 @@ public:
 	void soloButtonClicked();
 	void muteButtonClicked();
 	void fileButtonClicked();
-
+	
 	File getFile();
 
 	void paint(Graphics& g) override;
@@ -33,7 +33,6 @@ private:
 			   muteButton{ "M" },
 			   removeButton{ "-" },
 			   fileButton{ "..." };
-
+	JOELEngine je;
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(ChannelComponent)
 };
-

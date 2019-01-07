@@ -1,8 +1,8 @@
 #include "PlaybackDemo.h"
 #include "TracktionDemoUtilities.h"
-
-
 using namespace tracktion_engine;
+
+
 
 
 
@@ -29,10 +29,7 @@ void PlaybackDemo::initTransport()
 
 PlaybackDemo::PlaybackDemo() 
 {
-
 	edit = std::make_unique<Edit>(engine, createEmptyEdit(), Edit::forEditing, nullptr, 0);
-
-
 
 											/*Buttons functionality*/
 	playPauseButton.onClick = [this] { EngineHelpers::togglePlay(*edit); };
@@ -46,15 +43,11 @@ PlaybackDemo::PlaybackDemo()
 	
 											/*Buttons visibility*/
 	addAndMakeVisible(playPauseButton);
-
-	
 	addAndMakeVisible(settingsButton);
-	
 	addAndMakeVisible(addChannelButton);
-
 	addAndMakeVisible(recordButton);
-	
 	addAndMakeVisible(removeChannelButton);
+
 	removeChannelButton.setEnabled(false);
 
 

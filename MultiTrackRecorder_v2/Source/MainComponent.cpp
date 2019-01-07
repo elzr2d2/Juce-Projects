@@ -5,6 +5,7 @@
 //==============================================================================
 MainComponent::MainComponent()
 {
+	
 	setSize(800, 600);
 
 	// Some platforms require permissions to open input channels so request that here
@@ -21,6 +22,11 @@ MainComponent::MainComponent()
 	}
 
 	addAndMakeVisible(demo);
+
+
+
+
+	
 }
 
 MainComponent::~MainComponent()
@@ -72,6 +78,7 @@ void MainComponent::paint(Graphics& g)
 void MainComponent::resized()
 {
 	demo.setBounds(getLocalBounds());
+
 	// This is called when the MainContentComponent is resized.
 	// If you add any child components, this is where you should
 	// update their positions.

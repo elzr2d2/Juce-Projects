@@ -1,10 +1,6 @@
 #pragma once
-
 #include "JuceHeader.h"
 #include "TracktionDemoUtilities.h"
-
-
-
 
 class PlaybackDemo : public Component, private ChangeListener
 {
