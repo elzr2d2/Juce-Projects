@@ -1,6 +1,8 @@
 #include "JuceHeader.h"
 #include "TracktionDemoUtilities.h"
-using namespace tracktion_engine;
+using namespace  tracktion_engine;
+
+
 #pragma once
 
 class JOELEngine : public Component {
@@ -9,17 +11,17 @@ public :
 	JOELEngine();
 	~JOELEngine();
 	
-
 	void addChannel(File file);
 	void removeChannel();
 	void removeTrack(te::AudioTrack & track);
+	void initTransport();
 
 private:
 
 	te::WaveAudioClip::Ptr loadAudioFileAsClip(const File& file, int trackNumber);
 
 	void addNewClipFromFile(const File& editFile, int trackNum);
-	void initTransport();
+	
 
 	void removeAllClips(te::AudioTrack& track);
 
@@ -32,6 +34,7 @@ private:
 	AudioTransportSource transport;
 
 	int trackNum = 0;
+	
 
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(JOELEngine)
 };

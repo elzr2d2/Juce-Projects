@@ -45,6 +45,5 @@ private:
 	std::unique_ptr<FileChooser> fc;
 
 
-
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(PlaybackDemo)
 };

@@ -4,23 +4,23 @@
               jucerVersion="5.3.2">
   <MAINGROUP id="FRiNUi" name="MultiTrackRecorder_v2">
     <GROUP id="{C6F2D701-A796-9F85-99CE-940B77A79B6D}" name="Source">
-      <FILE id="KgVu6S" name="TracktionDemoUtilities.cpp" compile="1" resource="0"
-            file="Source/TracktionDemoUtilities.cpp"/>
-      <FILE id="dZqBYU" name="TracktionDemoUtilities.h" compile="0" resource="0"
-            file="Source/TracktionDemoUtilities.h"/>
       <FILE id="m9RfKs" name="ChannelComponent.cpp" compile="1" resource="0"
             file="Source/ChannelComponent.cpp"/>
       <FILE id="WxiZTl" name="ChannelComponent.h" compile="0" resource="0"
             file="Source/ChannelComponent.h"/>
+      <FILE id="HLaI13" name="JOELEngine.cpp" compile="1" resource="0" file="Source/JOELEngine.cpp"/>
+      <FILE id="r0018T" name="JOELEngine.h" compile="0" resource="0" file="Source/JOELEngine.h"/>
+      <FILE id="WHzgNm" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="wJ6SLM" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="BtyzTx" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
       <FILE id="hn9A4j" name="PlaybackDemo.cpp" compile="1" resource="0"
             file="Source/PlaybackDemo.cpp"/>
       <FILE id="FxBR2p" name="PlaybackDemo.h" compile="0" resource="0" file="Source/PlaybackDemo.h"/>
-      <FILE id="BtyzTx" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
-      <FILE id="r0018T" name="JOELEngine.h" compile="0" resource="0" file="Source/JOELEngine.h"/>
-      <FILE id="HLaI13" name="JOELEngine.cpp" compile="1" resource="0" file="Source/JOELEngine.cpp"/>
-      <FILE id="wJ6SLM" name="MainComponent.cpp" compile="1" resource="0"
-            file="Source/MainComponent.cpp"/>
-      <FILE id="WHzgNm" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="KgVu6S" name="TracktionDemoUtilities.cpp" compile="1" resource="0"
+            file="Source/TracktionDemoUtilities.cpp"/>
+      <FILE id="dZqBYU" name="TracktionDemoUtilities.h" compile="0" resource="0"
+            file="Source/TracktionDemoUtilities.h"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>

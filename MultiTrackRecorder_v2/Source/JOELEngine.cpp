@@ -15,7 +15,7 @@ void JOELEngine::addChannel(File file)
 {
 	addNewClipFromFile(file, trackNum++);
 
-	initTransport();
+	//initTransport();
 }
 
 void JOELEngine::removeChannel()

@@ -2,7 +2,7 @@
 
 #include "../JuceHeader.h"
 #include "JOELEngine.h"
-class ChannelComponent : public AudioAppComponent , private ChangeListener
+class ChannelComponent : public AudioAppComponent 
 {
 public:
 

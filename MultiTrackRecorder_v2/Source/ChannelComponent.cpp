@@ -1,6 +1,6 @@
 
 #include "ChannelComponent.h"
-
+#include "TracktionDemoUtilities.h"
 #define CHANNEL_WIDTH 360
 #define CHANNEL_HEIGHT 100
 #define VOL_MAX 100
@@ -27,6 +27,7 @@ ChannelComponent::ChannelComponent()
 	muteButton.onClick = [this] { ChannelComponent::muteButtonClicked(); };
 	fileButton.onClick = [this] { ChannelComponent::fileButtonClicked(); };
 
+	
 	addAndMakeVisible(name);
 	addAndMakeVisible(vol_Slider);
 	addAndMakeVisible(pan_Slider);
@@ -64,7 +65,7 @@ void ChannelComponent::removeButtonClicked()
 
 void ChannelComponent::soloButtonClicked()
 {
-	
+	je.initTransport();
 }
 
 void ChannelComponent::muteButtonClicked()
