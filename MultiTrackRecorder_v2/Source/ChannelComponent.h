@@ -2,7 +2,7 @@
 
 #include "../JuceHeader.h"
 #include "JOELEngine.h"
-class ChannelComponent : public AudioAppComponent 
+class ChannelComponent : public AudioAppComponent, public ChangeListener
 {
 public:
 
@@ -12,11 +12,6 @@ public:
 	void prepareToPlay(int samplesPerBlockExpected, double sampleRate) override;
 	void getNextAudioBlock(const AudioSourceChannelInfo& bufferToFill) override;
 	void releaseResources() override;
-
-	void removeButtonClicked();
-	void soloButtonClicked();
-	void muteButtonClicked();
-	void fileButtonClicked();
 	
 	File getFile();
 
@@ -24,6 +19,26 @@ public:
 	void resized() override;
 	
 private:
+
+	enum ChannelState
+    {
+        Soloing,
+		Unsoloing,
+        Muting,
+		Unmuting
+    };
+
+    
+    ChannelState state;
+    
+    void fileButtonClicked();
+    
+    void soloButtonClicked();
+    void muteButtonClicked();
+	void removeButtonClicked();
+    void channelStateChanged(ChannelState newState);
+	void changeListenerCallback(ChangeBroadcaster * source) override;
+
 
 	File file;
 	TextEditor name;

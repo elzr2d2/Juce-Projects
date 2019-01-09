@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="GbLUjg" name="MultiTrackRecorder_v2" projectType="guiapp"
-              jucerVersion="5.3.2">
+              jucerVersion="5.4.1">
   <MAINGROUP id="FRiNUi" name="MultiTrackRecorder_v2">
     <GROUP id="{C6F2D701-A796-9F85-99CE-940B77A79B6D}" name="Source">
       <FILE id="m9RfKs" name="ChannelComponent.cpp" compile="1" resource="0"
             file="Source/ChannelComponent.cpp"/>
       <FILE id="WxiZTl" name="ChannelComponent.h" compile="0" resource="0"
             file="Source/ChannelComponent.h"/>
+      <FILE id="gg7hKQ" name="ChannelPanel.cpp" compile="1" resource="0"
+            file="Source/ChannelPanel.cpp"/>
+      <FILE id="Y4BCdL" name="ChannelPanel.h" compile="0" resource="0" file="Source/ChannelPanel.h"/>
+      <FILE id="RGnisC" name="ControlBar.cpp" compile="1" resource="0" file="Source/ControlBar.cpp"/>
+      <FILE id="CzqiGi" name="ControlBar.h" compile="0" resource="0" file="Source/ControlBar.h"/>
       <FILE id="HLaI13" name="JOELEngine.cpp" compile="1" resource="0" file="Source/JOELEngine.cpp"/>
       <FILE id="r0018T" name="JOELEngine.h" compile="0" resource="0" file="Source/JOELEngine.h"/>
       <FILE id="WHzgNm" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>

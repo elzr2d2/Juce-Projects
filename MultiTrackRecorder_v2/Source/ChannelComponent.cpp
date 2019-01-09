@@ -65,12 +65,58 @@ void ChannelComponent::removeButtonClicked()
 
 void ChannelComponent::soloButtonClicked()
 {
-	je.initTransport();
+	if (soloButton.getClickingTogglesState() == true)
+	{
+		channelStateChanged(Unmuting);
+	}
+	else
+	{
+		channelStateChanged(Muting);
+	}
 }
 
 void ChannelComponent::muteButtonClicked()
 {
+	if (muteButton.getClickingTogglesState()==true)
+	{
+		channelStateChanged(Unmuting);
+	}
+	else
+	{
+		channelStateChanged(Muting);
+	}
 }
+
+void ChannelComponent::channelStateChanged(ChannelState newState)
+{
+	if (newState != state)
+	{
+		state = newState;
+
+		switch (state) {	
+		case Soloing:		
+			soloButton.setClickingTogglesState(true);		
+			break;
+
+		case Muting:
+			muteButton.setClickingTogglesState(true);
+			break;
+
+		case Unsoloing:
+			soloButton.setClickingTogglesState(false);
+			break;
+
+		case Unmuting:
+			muteButton.setClickingTogglesState(false);
+			break;
+		}
+	}
+}
+
+void ChannelComponent::changeListenerCallback(ChangeBroadcaster * source)
+{
+}
+
 
 void ChannelComponent::fileButtonClicked()
 {
@@ -106,6 +152,7 @@ void ChannelComponent::resized()
 	int sliderSize = 50;
 
 	name.setBounds(border, y, nameWidth, height);
+	removeButton.setBounds(getWidth()-buttonSize, 0, buttonSize, buttonSize);
 	soloButton.setBounds(name.getWidth()+border*2, y, buttonSize, buttonSize);
 	muteButton.setBounds(name.getWidth()+soloButton.getWidth()+border*3, y, buttonSize, buttonSize);
 	fileButton.setBounds(name.getWidth() + soloButton.getWidth() * 2 + border * 4, y, buttonSize, buttonSize);

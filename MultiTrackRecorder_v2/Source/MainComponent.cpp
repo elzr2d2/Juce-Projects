@@ -3,8 +3,8 @@
 MainComponent::MainComponent()
 {
 	//addAndMakeVisible(demo);
-	addAndMakeVisible(ch);
-	addAndMakeVisible(ch2);
+	addAndMakeVisible(cp);
+	addAndMakeVisible(cb);
 
 
 
@@ -58,7 +58,7 @@ void MainComponent::paint(Graphics& g)
 void MainComponent::resized()
 {
 
-	ch.setBounds(100, 100, ch.getWidth(), ch.getHeight());
-	ch2.setBounds(100, 300, ch.getWidth(), ch.getHeight());
+	cb.setBounds(0, 0,cb.getWidth(),cb.getHeight());
+	cp.setBounds(0, cb.getHeight()+10, cp.getWidth(), cp.getHeight());
 	
 }

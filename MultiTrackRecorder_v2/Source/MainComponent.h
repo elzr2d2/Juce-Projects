@@ -1,6 +1,6 @@
 #pragma once
 #include "../JuceLibraryCode/JuceHeader.h"
-#include "ChannelComponent.h"
+#include "ChannelPanel.h"
 #include "ControlBar.h"
 
 class MainComponent   : public AudioAppComponent
@@ -19,6 +19,7 @@ public:
 
 private:
 
-	ChannelComponent ch,ch2;
+	ChannelComponent cp;
+	ControlBar cb;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };
