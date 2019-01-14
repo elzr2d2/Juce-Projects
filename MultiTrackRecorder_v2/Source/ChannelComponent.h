@@ -17,27 +17,28 @@ public:
 
 	void paint(Graphics& g) override;
 	void resized() override;
+
+	void fileButtonClicked();
+
+	void soloButtonClicked();
+	void muteButtonClicked();
+	void removeButtonClicked();
 	
-private:
+	void changeListenerCallback(ChangeBroadcaster * source) override;
 
 	enum ChannelState
-    {
-        Soloing,
+	{
+		Soloing,
 		Unsoloing,
-        Muting,
+		Muting,
 		Unmuting
-    };
+	};
 
-    
-    ChannelState state;
-    
-    void fileButtonClicked();
-    
-    void soloButtonClicked();
-    void muteButtonClicked();
-	void removeButtonClicked();
-    void channelStateChanged(ChannelState newState);
-	void changeListenerCallback(ChangeBroadcaster * source) override;
+	ChannelState state;
+
+	void channelStateChanged(ChannelState newState);
+
+private:
 
 
 	File file;
