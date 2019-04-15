@@ -1,23 +1,13 @@
-/*
-  ==============================================================================
-
-    AudioClipComponent.cpp
-    Created: 14 Apr 2019 8:57:19pm
-    Author:  El
-
-  ==============================================================================
-*/
 
 #include "AudioClipComponent.h"
-AudioClipComponent::AudioClipComponent (EditViewState& evs, te::Clip::Ptr c)
-    : ClipComponent (evs, c)
+AudioClipComponent::AudioClipComponent (EditViewState& evs, te::Clip::Ptr c) : editViewState(evs), clip(c)
 {
     updateThumbnail();
 }
 
 void AudioClipComponent::paint (Graphics& g)
 {
-    ClipComponent::paint (g);
+    paint (g);
     
     if (editViewState.drawWaveforms && thumbnail != nullptr)
         drawWaveform (g, *getWaveAudioClip(), *thumbnail, Colours::black.withAlpha (0.5f),
@@ -100,6 +90,11 @@ void AudioClipComponent::drawChannels (Graphics& g, te::SmartThumbnail& thumb, R
     {
         thumb.drawChannel (g, area, useHighRes, time, 1, rightGain);
     }
+}
+
+te::WaveAudioClip* AudioClipComponent::getWaveAudioClip()
+{ 
+	return dynamic_cast<te::WaveAudioClip*> (clip.get()); 
 }
 
 void AudioClipComponent::updateThumbnail()

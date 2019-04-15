@@ -1,23 +1,21 @@
-/*
-  ==============================================================================
-
-    AudioClipComponent.h
-    Created: 14 Apr 2019 8:57:19pm
-    Author:  El
-
-  ==============================================================================
-*/
 
 #pragma once
 
-class AudioClipComponent : public ClipComponent
+#include "JuceHeader.h"
+#include "EditViewState.h"
+#include "ClipComponent.h"
+
+using namespace tracktion_engine;
+namespace te = tracktion_engine;
+
+class AudioClipComponent : Component
 {
 public:
     AudioClipComponent (EditViewState&, te::Clip::Ptr);
     
-    te::WaveAudioClip* getWaveAudioClip() { return dynamic_cast<te::WaveAudioClip*> (clip.get()); }
+	te::WaveAudioClip* getWaveAudioClip();
     
-    void paint (Graphics& g) override;
+    void paint (Graphics& g);
     
 private:
     void updateThumbnail();
@@ -28,4 +26,8 @@ private:
                        float leftGain, float rightGain);
 
     std::unique_ptr<te::SmartThumbnail> thumbnail;
+
+	std::unique_ptr<te::Clip> clip;
+
+	EditViewState& editViewState;
 };
